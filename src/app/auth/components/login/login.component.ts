@@ -13,18 +13,21 @@ export class LoginComponent {
     
   }
 
+  submit = false;
+  hide = true;
   loading = false;
   error:string | void = "";
 
   loginForm = new FormGroup({
     email: new FormControl("", [Validators.required, Validators.email]),
-    password: new FormControl("", [Validators.required])
+    password: new FormControl("", [Validators.required , Validators.minLength(6)]) //min length required for firebase
   })
 
   async onSubit(){
-    this.loading = true;
-    this.error = "";
-    
+    if(this.submit){
+      this.loading = true;
+      this.error = "";
+    }
   }
   
   getEmailError(): string{
@@ -47,9 +50,14 @@ export class LoginComponent {
     return "an unknown error occured"
   }
 
+  public hideText(): void {
+    this.submit = false;
+    this.hide = !this.hide;
+  }
 
-
-  hide = true;
+  public submitClicked(): void {
+    this.submit = true;
+  }
 
 
 }

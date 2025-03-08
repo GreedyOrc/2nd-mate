@@ -13,14 +13,14 @@
                 <mat-label>Enter your password</mat-label>
                 <input matInput autocomplete="off" formControlName="password" [type]="hide ? 'password' : 'text'"
                     required />
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                <button mat-icon-button matSuffix (click)="hideText()" [attr.aria-label]="'Hide password'"
                     [attr.aria-pressed]="hide">
                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                 </button>
                 <mat-error>{{ getPasswordError() }}</mat-error>
             </mat-form-field>
 
-            <button mat-raised-button color="primary" [disabled]="loginForm.invalid">Login</button>
+            <button mat-raised-button color="primary" [disabled]="loginForm.invalid" (click)="submitClicked()">Login</button>
 
             <p>Don't have an account? Register <a routerLink="../register">here</a></p>
         </form>
