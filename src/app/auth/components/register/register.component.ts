@@ -8,8 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent {
 
-
-  
+  submit = false;
+  hide = true;
   loading = false;
   error:string | void = "";
 
@@ -19,8 +19,10 @@ export class RegisterComponent {
   })
 
   async onSubit(){
-    this.loading = true;
-    this.error = "";
+    if(this.submit){
+      this.loading = true;
+      this.error = "";
+    }
     
   }
   
@@ -44,7 +46,14 @@ export class RegisterComponent {
     return "an unknown error occured"
   }
 
+  public hideText(): void {
+    this.submit = false;
+    this.hide = !this.hide;
+  }
 
+  public submitClicked(): void {
+    this.submit = true;
+  }
 
-  hide = true;
+  
 }
