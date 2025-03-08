@@ -1,1 +1,30 @@
-<p>register works!</p>
+<div class="auth-container">
+    <mat-card>
+        <h1>Register an account</h1>
+        <form [formGroup]="loginForm" class="form" (ngSubmit)="onSubit()">
+
+            <mat-form-field class="full-width">
+                <mat-label>Enter your email</mat-label>
+                <input matInput placeholder="email@example.com" autocomplete="off" formControlName="email" required />
+                <mat-error>{{getEmailError()}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <mat-label>Enter your password</mat-label>
+                <input matInput autocomplete="off" formControlName="password" [type]="hide ? 'password' : 'text'"
+                    required />
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+                <mat-error>{{ getPasswordError() }}</mat-error>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" [disabled]="loginForm.invalid">Register</button>
+
+            <p>Already have an account? Sign in <a routerLink="../login">here</a></p>
+        </form>
+        <div *ngIf="loading">Something in here</div>
+        <app-loading-icon *ngIf="loading"></app-loading-icon>
+    </mat-card>
+</div>
