@@ -20,6 +20,11 @@ import {MatInputModule} from '@angular/material/input';
 import { MatCardModule} from '@angular/material/card';
 import { LoadingIconComponent } from './shared/components/loading-icon/loading-icon.component';
 import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { GoogleLayerComponent } from './map/components/google-layer/google-layer.component';
 
 
 @NgModule({
@@ -31,10 +36,13 @@ import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
     RegisterComponent,
     DataMainComponent,
     MapBaseComponent,
-    LoadingIconComponent
+    LoadingIconComponent,
+    GoogleLayerComponent
   ],
   imports: [
     BrowserModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()), 
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -47,9 +55,11 @@ import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
     MatCardModule,
     FormsModule, 
     ReactiveFormsModule,
-    MatInputModule 
+    MatInputModule
+    
   ],
-  providers: [],
+  providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

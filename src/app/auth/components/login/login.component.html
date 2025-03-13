@@ -26,5 +26,6 @@
         </form>
         <div *ngIf="loading">Something in here</div>
         <app-loading-icon *ngIf="loading"></app-loading-icon>
+        <mat-error *ngIf=" error">{{ error}}</mat-error>
     </mat-card>
 </div>

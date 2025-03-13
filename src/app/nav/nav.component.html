@@ -10,11 +10,12 @@
     </div>
 
     <mat-nav-list>
-      <a class="nav-link"mat-list-item routerLink="map"><mat-icon>map</mat-icon> Map</a>
-      <a class="nav-link"mat-list-item routerLink="data"><mat-icon>table_view</mat-icon> Raw Data</a>
-      <a class="nav-link"mat-list-item routerLink="login"><mat-icon>login</mat-icon> Login</a>
-      <a class="nav-link"mat-list-item ><mat-icon>logout</mat-icon> Logout</a>
+      <a class="nav-link"mat-list-item routerLink="map" *ngIf="authenticated"><mat-icon>map</mat-icon> Map</a>
+      <a class="nav-link"mat-list-item routerLink="data" *ngIf="authenticated"><mat-icon>table_view</mat-icon> Raw Data</a>
+      <a class="nav-link"mat-list-item routerLink="login" *ngIf="!authenticated"><mat-icon>login</mat-icon> Login</a>
       <a class="nav-link"mat-list-item routerLink="about"><mat-icon>question_mark</mat-icon> About</a>
+      <a class="nav-link"mat-list-item (click)="onLogout()" *ngIf="authenticated"><mat-icon>logout</mat-icon > Logout</a>
+      
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
