@@ -25,6 +25,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { GoogleLayerComponent } from './map/components/google-layer/google-layer.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -55,8 +56,8 @@ import { GoogleLayerComponent } from './map/components/google-layer/google-layer
     MatCardModule,
     FormsModule, 
     ReactiveFormsModule,
-    MatInputModule
-    
+    MatInputModule,
+    GoogleMapsModule
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],

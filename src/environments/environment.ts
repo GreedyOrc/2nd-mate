@@ -8,4 +8,7 @@ export const environment = {
     messagingSenderId: '886743991247',
     measurementId: 'G-MBV6EQZM1L',
   },
+  google: {
+    apiKey: 'AIzaSyBLsBUxV5v3pHjP9ytkn_nMFz-FAy-GDX8'
+  }
 };
