@@ -20,6 +20,13 @@ import {MatInputModule} from '@angular/material/input';
 import { MatCardModule} from '@angular/material/card';
 import { LoadingIconComponent } from './shared/components/loading-icon/loading-icon.component';
 import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { PositionInfoComponent } from './map/components/position-info/position-info.component';
+
 
 
 @NgModule({
@@ -31,10 +38,13 @@ import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
     RegisterComponent,
     DataMainComponent,
     MapBaseComponent,
-    LoadingIconComponent
+    LoadingIconComponent,
+    PositionInfoComponent
   ],
   imports: [
     BrowserModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()), 
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -47,9 +57,11 @@ import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
     MatCardModule,
     FormsModule, 
     ReactiveFormsModule,
-    MatInputModule 
+    MatInputModule,
+    GoogleMapsModule
   ],
-  providers: [],
+  providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

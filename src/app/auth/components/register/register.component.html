@@ -1,7 +1,7 @@
 <div class="auth-container">
     <mat-card>
         <h1>Register an account</h1>
-        <form [formGroup]="loginForm" class="form" (ngSubmit)="onSubit()">
+        <form [formGroup]="registerForm" class="form" (ngSubmit)="onSubit()">
 
             <mat-form-field class="full-width">
                 <mat-label>Enter your email</mat-label>
@@ -20,11 +20,12 @@
                 <mat-error>{{ getPasswordError() }}</mat-error>
             </mat-form-field>
 
-            <button mat-raised-button color="primary" [disabled]="loginForm.invalid" (click)="submitClicked()">Register</button>
+            <button mat-raised-button color="primary" [disabled]="registerForm.invalid" (click)="submitClicked()">Register</button>
 
             <p>Already have an account? Sign in <a routerLink="../login">here</a></p>
         </form>
         <div *ngIf="loading">Something in here</div>
         <app-loading-icon *ngIf="loading"></app-loading-icon>
+        <mat-error *ngIf=" error">{{ error}}</mat-error>
     </mat-card>
 </div>

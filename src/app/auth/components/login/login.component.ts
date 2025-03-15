@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent {
 
-  constructor() {
+  constructor(private authService: AuthService) {
     
   }
 
@@ -27,6 +27,9 @@ export class LoginComponent {
     if(this.submit){
       this.loading = true;
       this.error = "";
+      const {email, password} = this.loginForm.value;
+     this.error = await this.authService.login(email!,password!);
+     this.loading = false;
     }
   }
   
