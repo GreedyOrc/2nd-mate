@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GoogleLayerComponent } from './google-layer.component';
+import { PositionInfoComponent } from './position-info.component';
 
-describe('GoogleLayerComponent', () => {
-  let component: GoogleLayerComponent;
-  let fixture: ComponentFixture<GoogleLayerComponent>;
+describe('PositionInfoComponent', () => {
+  let component: PositionInfoComponent;
+  let fixture: ComponentFixture<PositionInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GoogleLayerComponent ]
+      declarations: [ PositionInfoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GoogleLayerComponent);
+    fixture = TestBed.createComponent(PositionInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

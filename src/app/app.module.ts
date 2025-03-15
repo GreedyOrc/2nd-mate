@@ -24,8 +24,9 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
-import { GoogleLayerComponent } from './map/components/google-layer/google-layer.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { PositionInfoComponent } from './map/components/position-info/position-info.component';
+
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     DataMainComponent,
     MapBaseComponent,
     LoadingIconComponent,
-    GoogleLayerComponent
+    PositionInfoComponent
   ],
   imports: [
     BrowserModule,
