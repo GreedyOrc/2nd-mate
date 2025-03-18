@@ -35,13 +35,13 @@ export class MapBaseComponent implements AfterViewInit {
       disableDefaultUI: true, // Removes all default controls[5]
       gestureHandling: 'cooperative',
       zoomControl: true,
-      zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_BOTTOM},
+      zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_BOTTOM },
     };
 
 
     this.map = new google.maps.Map(this.mapContainer.nativeElement, mapOptions);
     this.marker = new google.maps.Marker({ map: this.map });
-    
+
     // Create the DIV to hold the control.
     const centerControlDiv = document.createElement('div');
     const infoBannerDiv = document.createElement('div1');
@@ -72,6 +72,13 @@ export class MapBaseComponent implements AfterViewInit {
         (position) => {
           console.log("First position obtained:", position);
           this.updatePosition(position);
+          if (position) {
+            // console.log('Inside position check')
+            this.map.setCenter({
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            });
+          }
           //then watch position and set loop. 
           navigator.geolocation.watchPosition(
             (pos) => this.updatePosition(pos),
@@ -95,9 +102,13 @@ export class MapBaseComponent implements AfterViewInit {
       position.coords.latitude,
       position.coords.longitude
     );
-    // console.log(position);
-    // this.map.panTo(pos);
+
     this.marker.setPosition(pos);
+
+    const speedCell = document.getElementById('speedCell');
+    const directionCell = document.getElementById('directionCell');
+    const latCell = document.getElementById('latCell');
+    const longCell = document.getElementById('longCell');
 
     // Update marker rotation if heading available
     if (position.coords.heading) {
@@ -110,14 +121,14 @@ export class MapBaseComponent implements AfterViewInit {
 
     // Update table cells
     // error happens when first loading - then ok's out. Maybe need to catch the erorr however it is updating. 
-  document.getElementById('speedCell')!.innerHTML = this.speed + ' m/s';
-  document.getElementById('directionCell')!.innerHTML = this.heading + '°';
-  document.getElementById('latCell')!.innerHTML = position.coords.latitude.toString();
-  document.getElementById('longCell')!.innerHTML = position.coords.longitude.toString();
+    if (speedCell) speedCell.innerHTML = this.speed + ' m/s';
+    if (directionCell) directionCell.innerHTML = this.heading + '°';
+    if (latCell) latCell.innerHTML = position.coords.latitude.toString();
+    if (longCell) longCell.innerHTML = position.coords.longitude.toString();
 
   }
 
-  createCenterControl(map: google.maps.Map ) {
+  createCenterControl(map: google.maps.Map) {
     //need to place this into CSS file
     const controlButton = document.createElement('button');
     this.customButtonSetup(controlButton);
@@ -127,7 +138,7 @@ export class MapBaseComponent implements AfterViewInit {
     controlButton.type = 'button';
     //need to think about how to restructre this. 
     controlButton.addEventListener('click', () => {
-      
+
       if (this.currentPosition?.coords) {
         map.setCenter({
           lat: this.currentPosition.coords.latitude,
@@ -141,7 +152,7 @@ export class MapBaseComponent implements AfterViewInit {
     return controlButton;
   }
 
-  createStartRope(map: google.maps.Map ) {
+  createStartRope(map: google.maps.Map) {
     const startRope = document.createElement('button');
     this.customButtonSetup(startRope);
 
@@ -158,7 +169,7 @@ export class MapBaseComponent implements AfterViewInit {
 
   }
 
-  createEndRope(map: google.maps.Map ) {
+  createEndRope(map: google.maps.Map) {
     const endRope = document.createElement('button');
     this.customButtonSetup(endRope);
 
@@ -176,25 +187,25 @@ export class MapBaseComponent implements AfterViewInit {
 
   }
 
-  createInfoBanner(){
+  createInfoBanner() {
     const infoSpeedTable = document.createElement('table');
     let newrow1 = infoSpeedTable.insertRow(0);
-    newrow1.insertCell(0).innerHTML = 'Speed' ;
+    newrow1.insertCell(0).innerHTML = 'Speed';
     newrow1.insertCell(1).innerHTML = + this.speed + ' m/s';
     newrow1.cells[1].id = 'speedCell';
-    
+
     let newrow2 = infoSpeedTable.insertRow(1);
-    newrow2.insertCell(0).innerHTML = 'Direction' ;
+    newrow2.insertCell(0).innerHTML = 'Direction';
     newrow2.insertCell(1).innerHTML = + this.heading + '°';
     newrow2.cells[1].id = 'directionCell';
 
     let newrow3 = infoSpeedTable.insertRow(2);
-    newrow3.insertCell(0).innerHTML = 'Lat' ;
-    newrow3.insertCell(1).innerHTML =  'N/A';
+    newrow3.insertCell(0).innerHTML = 'Lat';
+    newrow3.insertCell(1).innerHTML = 'N/A';
     newrow3.cells[1].id = 'latCell';
 
     let newrow4 = infoSpeedTable.insertRow(3);
-    newrow4.insertCell(0).innerHTML = 'Long' ;
+    newrow4.insertCell(0).innerHTML = 'Long';
     newrow4.insertCell(1).innerHTML = 'N/A';
     newrow4.cells[1].id = 'longCell';
 
@@ -206,7 +217,7 @@ export class MapBaseComponent implements AfterViewInit {
     return infoSpeedTable;
 
   }
-  
+
   customButtonSetup(button: HTMLButtonElement) {
     button.style.backgroundColor = '#fff';
     button.style.border = '2px solid #fff';
@@ -223,7 +234,7 @@ export class MapBaseComponent implements AfterViewInit {
   }
   //also need to think if we can show heading etc info on the map. 
 
-  startRope(startRope: HTMLButtonElement){
+  startRope(startRope: HTMLButtonElement) {
     console.log('Start Rope Button Pressed!')
     //can we add a pin? Should we display test for start of rope and end? 
     startRope.style.display = 'none';
@@ -233,14 +244,14 @@ export class MapBaseComponent implements AfterViewInit {
     console.log(this.currentPosition);
   }
 
-  endRope(endRope: HTMLButtonElement){
+  endRope(endRope: HTMLButtonElement) {
     console.log('End Rope Button Pressed!')
     endRope.style.display = 'none';
     document.getElementById('startRopeButton')!.style.display = 'block';
     console.log('start position' + this.startPosition);
     console.log(this.startPosition);
     console.log('current position' + this.currentPosition);
-    console.log( this.currentPosition);
+    console.log(this.currentPosition);
     this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
     //can we add a pin? Should we display test for start of rope and end? 
     // startRope.style.display = 'none';
