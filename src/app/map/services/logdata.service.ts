@@ -30,6 +30,4 @@ export class LogdataService {
     this.ropes.push(ropeEntry);
     this.http.post('https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/' + this.userID + '.json', {ropeEntry}).subscribe();
   }
-
-
 }
