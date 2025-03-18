@@ -35,13 +35,13 @@ export class MapBaseComponent implements AfterViewInit {
       disableDefaultUI: true, // Removes all default controls[5]
       gestureHandling: 'cooperative',
       zoomControl: true,
-      zoomControlOptions: { position: google.maps.ControlPosition.LEFT_CENTER },
+      zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_BOTTOM},
     };
 
 
     this.map = new google.maps.Map(this.mapContainer.nativeElement, mapOptions);
     this.marker = new google.maps.Marker({ map: this.map });
-
+    
     // Create the DIV to hold the control.
     const centerControlDiv = document.createElement('div');
     const infoBannerDiv = document.createElement('div1');
@@ -67,13 +67,24 @@ export class MapBaseComponent implements AfterViewInit {
   initGeolocation() {
     // console.log("InitGeoLocation");
     if (navigator.geolocation) {
-      const watchId = navigator.geolocation.watchPosition(
-        (position) => this.updatePosition(position),
-        (error) => console.error('Geolocation error:', error),
+      //Update position on first load
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          console.log("First position obtained:", position);
+          this.updatePosition(position);
+          //then watch position and set loop. 
+          navigator.geolocation.watchPosition(
+            (pos) => this.updatePosition(pos),
+            (error) => console.error('Geolocation error:', error),
+            { enableHighAccuracy: true }
+          );
+        },
+        (error) => console.error('Error getting initial position:', error),
         { enableHighAccuracy: true }
       );
     }
   }
+
 
   private updatePosition(position: GeolocationPosition) {
     this.currentPosition = position;
@@ -85,7 +96,7 @@ export class MapBaseComponent implements AfterViewInit {
       position.coords.longitude
     );
     // console.log(position);
-    this.map.panTo(pos);
+    // this.map.panTo(pos);
     this.marker.setPosition(pos);
 
     // Update marker rotation if heading available
@@ -116,9 +127,16 @@ export class MapBaseComponent implements AfterViewInit {
     controlButton.type = 'button';
     //need to think about how to restructre this. 
     controlButton.addEventListener('click', () => {
-      map.setCenter(this.house);
-      this.whatsMyPosition();
       
+      if (this.currentPosition?.coords) {
+        map.setCenter({
+          lat: this.currentPosition.coords.latitude,
+          lng: this.currentPosition.coords.longitude
+        });
+        this.whatsMyPosition();
+      } else {
+        console.warn("Current position is not available");
+      }
     });
     return controlButton;
   }
