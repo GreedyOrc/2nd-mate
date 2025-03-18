@@ -13,6 +13,7 @@ export class MapBaseComponent implements AfterViewInit {
 
   @ViewChild('mapContainer', { static: false }) mapContainer!: ElementRef;
 
+  startPosition?: GeolocationPosition;
   map!: google.maps.Map;
   marker!: google.maps.Marker;
   currentPosition?: GeolocationPosition;
@@ -64,7 +65,7 @@ export class MapBaseComponent implements AfterViewInit {
   }
 
   initGeolocation() {
-    console.log("InitGeoLocation");
+    // console.log("InitGeoLocation");
     if (navigator.geolocation) {
       const watchId = navigator.geolocation.watchPosition(
         (position) => this.updatePosition(position),
@@ -83,7 +84,7 @@ export class MapBaseComponent implements AfterViewInit {
       position.coords.latitude,
       position.coords.longitude
     );
-    console.log(position);
+    // console.log(position);
     this.map.panTo(pos);
     this.marker.setPosition(pos);
 
@@ -129,9 +130,10 @@ export class MapBaseComponent implements AfterViewInit {
     startRope.textContent = 'Start Rope';
     startRope.title = 'Click to start the rope';
     startRope.type = 'button';
+    startRope.id = 'startRopeButton';
 
     startRope.addEventListener('click', () => {
-      this.whatsMyPosition();
+      // this.whatsMyPosition();
       this.startRope(startRope);
     });
     return startRope;
@@ -145,6 +147,8 @@ export class MapBaseComponent implements AfterViewInit {
     endRope.textContent = 'End Rope';
     endRope.title = 'Click to end the rope';
     endRope.type = 'button';
+    endRope.id = 'endRopeButton';
+    endRope.style.display = 'none';
 
     endRope.addEventListener('click', () => {
       this.whatsMyPosition();
@@ -175,6 +179,12 @@ export class MapBaseComponent implements AfterViewInit {
     newrow4.insertCell(0).innerHTML = 'Long' ;
     newrow4.insertCell(1).innerHTML = 'N/A';
     newrow4.cells[1].id = 'longCell';
+
+    infoSpeedTable.style.backgroundColor = '#fff';
+    infoSpeedTable.style.border = '2px solid #fff';
+    infoSpeedTable.style.borderRadius = '3px';
+    infoSpeedTable.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+
     return infoSpeedTable;
 
   }
@@ -190,7 +200,7 @@ export class MapBaseComponent implements AfterViewInit {
     button.style.fontSize = '16px';
     button.style.lineHeight = '38px';
     button.style.margin = '8px 0 22px';
-    button.style.padding = '0 5px';
+    button.style.padding = '0 10px';
     button.style.textAlign = 'center';
   }
   //also need to think if we can show heading etc info on the map. 
@@ -199,9 +209,21 @@ export class MapBaseComponent implements AfterViewInit {
     console.log('Start Rope Button Pressed!')
     //can we add a pin? Should we display test for start of rope and end? 
     startRope.style.display = 'none';
+    document.getElementById('endRopeButton')!.style.display = 'block';
+    this.startPosition = this.currentPosition;
+    console.log('Start Position Stored!')
+    console.log(this.currentPosition);
   }
+
   endRope(endRope: HTMLButtonElement){
     console.log('End Rope Button Pressed!')
+    endRope.style.display = 'none';
+    document.getElementById('startRopeButton')!.style.display = 'block';
+    console.log('start position' + this.startPosition);
+    console.log(this.startPosition);
+    console.log('current position' + this.currentPosition);
+    console.log( this.currentPosition);
+    this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
     //can we add a pin? Should we display test for start of rope and end? 
     // startRope.style.display = 'none';
   }
@@ -211,7 +233,7 @@ export class MapBaseComponent implements AfterViewInit {
   }
 
   onAddRope(currentPosition: GeolocationPosition) {
-    this.logdataService.storeLocation(currentPosition);
+    // this.logdataService.storeLocation( this.startPosition, currentPosition);
   }
 
 }
