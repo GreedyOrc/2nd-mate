@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable, ReplaySubject, Subject } from 'rxjs';
+
 
 @Component({
   selector: 'app-position-info',
@@ -7,6 +7,7 @@ import { Observable, ReplaySubject, Subject } from 'rxjs';
   styleUrls: ['./position-info.component.css']
 })
 export class PositionInfoComponent {
+  
 
 
 

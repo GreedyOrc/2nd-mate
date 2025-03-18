@@ -1,6 +1,6 @@
 <!-- <app-google-layer></app-google-layer> -->
  
-<div class="location-data" *ngIf="currentPosition">
+<!-- <div class="location-data" *ngIf="currentPosition">
     <div class="banner">
         <div id="speed">Speed: {{ speed }} m/s </div>
         <div id="direction">Direction: {{ heading }}°</div>
@@ -15,8 +15,12 @@
         <div id="longitude-box">Long: {{currentPosition.coords.longitude}}</div>
         <div id="last-updated-box">Last Updated: {{currentPosition.timestamp | date : 'dd/MM/YY HH:mm:ss'}}</div>
     </div>
+    
+</div> -->
+<div class="location-data" *ngIf="currentPosition">
+<!-- <button mat-raised-button color="primary" (click)="onAddRope(currentPosition)">Get Position</button> -->
 </div>
-<div #mapContainer class="map-container">
-</div>
-<button mat-raised-button color="primary" (click)="whatsMyPosition()">Get Position</button>
+<div #mapContainer class="map-container"></div>
+<!-- <button id="custom-button">Custom Button</button> -->
+
 

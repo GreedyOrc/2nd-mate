@@ -26,6 +26,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { PositionInfoComponent } from './map/components/position-info/position-info.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MapCardComponent } from './map/components/map-card/map-card.component';
 
 
 
@@ -39,7 +41,8 @@ import { PositionInfoComponent } from './map/components/position-info/position-i
     DataMainComponent,
     MapBaseComponent,
     LoadingIconComponent,
-    PositionInfoComponent
+    PositionInfoComponent,
+    MapCardComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +61,8 @@ import { PositionInfoComponent } from './map/components/position-info/position-i
     FormsModule, 
     ReactiveFormsModule,
     MatInputModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    HttpClientModule  
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],
