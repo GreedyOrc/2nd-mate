@@ -19,13 +19,18 @@ export class MapBaseComponent implements AfterViewInit {
   currentPosition?: GeolocationPosition;
   speed: number = 0;
   heading: number = 0;
-  house = { lat: 59.015168, lng: -3.1424512 };
+
+  ropesPolylines: google.maps.Polyline[] = []; // Store polyline references
 
   //  #############~  Uncomment to return to default ~#####################################
 
   ngAfterViewInit() {
     this.initMap();
     this.initGeolocation();
+
+    this.logdataService.ropes$.subscribe(ropes => {
+      this.drawRopesOnMap(ropes);
+    });
   }
 
   private initMap() {
@@ -92,6 +97,82 @@ export class MapBaseComponent implements AfterViewInit {
     }
   }
 
+
+  private drawRopesOnMap(ropes: any[]) {
+    // Clear existing polylines
+    this.ropesPolylines.forEach(polyline => polyline.setMap(null));
+    this.ropesPolylines = [];
+  
+    ropes.forEach(rope => {
+      if (rope.startLocation && rope.endLocation) {
+        const ropePath = [
+          { lat: rope.startLocation.coords.latitude, lng: rope.startLocation.coords.longitude },
+          { lat: rope.endLocation.coords.latitude, lng: rope.endLocation.coords.longitude }
+        ];
+  
+        const polyline = new google.maps.Polyline({
+          path: ropePath,
+          geodesic: true,
+          strokeColor: '#000000', // Brighter Orange-Red
+          strokeOpacity: 0.9, // Slightly transparent
+          strokeWeight: 5, // Increased thickness
+          map: this.map,
+          icons: [{
+            icon: {
+              path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW, // Adds small arrows along the line
+              scale: 4,
+              strokeColor: "#FF4500", // White arrows for contrast
+            },
+            offset: "50%", // Position at the middle of the polyline
+          }]
+        });
+  
+        // Create an InfoWindow
+        const infoWindow = new google.maps.InfoWindow({
+          content: `
+            <div style="
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              color: #333;
+              padding: 10px;
+              max-width: 250px;
+              word-wrap: break-word;
+              border-radius: 8px;
+            ">
+              <h3 style="margin: 0; font-size: 16px; color: #d9534f;">📌 Rope Details</h3>
+              <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
+              <p><strong>Start:</strong> 
+                <span style="color: #5bc0de;">(${rope.startLocation.coords.latitude.toFixed(5)}, ${rope.startLocation.coords.longitude.toFixed(5)})</span>
+              </p>
+              <p><strong>End:</strong> 
+                <span style="color: #5bc0de;">(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
+              </p>
+              <button style="
+                background-color: #5cb85c;
+                color: white;
+                border: none;
+                padding: 8px 12px;
+                margin-top: 5px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+
+            </div>
+          `,
+        });
+  
+        // Add Click Event Listener to Polyline
+        polyline.addListener("click", () => {
+          infoWindow.setPosition(ropePath[1]); // Show the info at the end location
+          infoWindow.open(this.map);
+        });
+  
+        this.ropesPolylines.push(polyline);
+      }
+    });
+  }
 
   private updatePosition(position: GeolocationPosition) {
     this.currentPosition = position;

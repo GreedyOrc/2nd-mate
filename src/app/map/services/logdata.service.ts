@@ -40,18 +40,18 @@ export class LogdataService {
       )
       .subscribe((response) => {
         if (response) {
-          const ropesArray = Object.values(response).filter((rope) => rope.live);
-          this.ropes = ropesArray;
+          const ropesArray = Object.values(response);
+          const liveRopes = ropesArray.filter(rope => rope.live === true);
+          
+          console.log('Filtered Live Ropes:', liveRopes); 
+  
+          this.ropes = liveRopes;
           this.ropes$.next(this.ropes.slice());
         } else {
           this.ropes = [];
           this.ropes$.next([]);
         }
       });
-
-
-
-
 
     // ######## Old items
 
