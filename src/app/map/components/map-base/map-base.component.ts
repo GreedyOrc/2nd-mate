@@ -41,6 +41,7 @@ export class MapBaseComponent implements AfterViewInit {
       gestureHandling: 'cooperative',
       zoomControl: true,
       zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_BOTTOM },
+      fullscreenControl: true
     };
 
 
@@ -53,20 +54,23 @@ export class MapBaseComponent implements AfterViewInit {
 
     // Create the control.
     const centerControl = this.createCenterControl(this.map);
-    const startRopeControl = this.createStartRope(this.map);
-    const endRopeControl = this.createEndRope(this.map);
+    // const startRopeControl = this.createStartRope(this.map);
+    // const endRopeControl = this.createEndRope(this.map);
     const infoControl = this.createInfoBanner();
+    const createRopeControl = this. createRopeControls();
 
     // Append the control to the DIV.
     centerControlDiv.appendChild(centerControl);
-    centerControlDiv.appendChild(startRopeControl);
-    centerControlDiv.appendChild(endRopeControl);
+    // centerControlDiv.appendChild(startRopeControl);
+    // centerControlDiv.appendChild(endRopeControl);
     infoBannerDiv.appendChild(infoControl);
+    infoBannerDiv.appendChild(createRopeControl);
 
     this.map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
-    this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(startRopeControl);
-    this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(endRopeControl);
+    // this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(startRopeControl);
+    // this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(endRopeControl);
     this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoControl);
+    this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(createRopeControl);
   }
 
   initGeolocation() {
@@ -113,21 +117,27 @@ export class MapBaseComponent implements AfterViewInit {
         const polyline = new google.maps.Polyline({
           path: ropePath,
           geodesic: true,
-          strokeColor: '#000000', // Brighter Orange-Red
-          strokeOpacity: 0.9, // Slightly transparent
-          strokeWeight: 5, // Increased thickness
+          strokeColor: '#000000', // Black polyline
+          strokeOpacity: 0.9,
+          strokeWeight: 5,
           map: this.map,
-          icons: [{
-            icon: {
-              path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW, // Adds small arrows along the line
-              scale: 4,
-              strokeColor: "#FF4500", // White arrows for contrast
-            },
-            offset: "50%", // Position at the middle of the polyline
-          }]
         });
   
-        // Create an InfoWindow
+        // Create an icon marker at the rope's end location
+        const iconMarker = new google.maps.Marker({
+          position: ropePath[1], // Set position to the end of the rope
+          map: this.map,
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE, // Small circle
+            scale: 6,
+            fillColor: "#FF4500", // Bright orange-red
+            fillOpacity: 1,
+            strokeColor: "#ffffff",
+            strokeWeight: 2,
+          },
+        });
+  
+        // Create an InfoWindow for the marker
         const infoWindow = new google.maps.InfoWindow({
           content: `
             <div style="
@@ -147,32 +157,20 @@ export class MapBaseComponent implements AfterViewInit {
               <p><strong>End:</strong> 
                 <span style="color: #5bc0de;">(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
               </p>
-              <button style="
-                background-color: #5cb85c;
-                color: white;
-                border: none;
-                padding: 8px 12px;
-                margin-top: 5px;
-                border-radius: 5px;
-                cursor: pointer;
-                font-size: 14px;
-                width: 100%;
-                text-align: center;
-
             </div>
           `,
         });
   
-        // Add Click Event Listener to Polyline
-        polyline.addListener("click", () => {
-          infoWindow.setPosition(ropePath[1]); // Show the info at the end location
-          infoWindow.open(this.map);
+        // Add click event listener to the marker instead of the polyline
+        iconMarker.addListener("click", () => {
+          infoWindow.open(this.map, iconMarker);
         });
   
         this.ropesPolylines.push(polyline);
       }
     });
   }
+  
 
   private updatePosition(position: GeolocationPosition) {
     this.currentPosition = position;
@@ -202,71 +200,92 @@ export class MapBaseComponent implements AfterViewInit {
 
     // Update table cells
     // error happens when first loading - then ok's out. Maybe need to catch the erorr however it is updating. 
-    if (speedCell) speedCell.innerHTML = this.speed + ' m/s';
-    if (directionCell) directionCell.innerHTML = this.heading + '°';
+    if (speedCell) speedCell.innerHTML = this.speed.toFixed(2) + ' m/s';
+    if (directionCell) directionCell.innerHTML = this.heading.toFixed(2) + '°';
     if (latCell) latCell.innerHTML = position.coords.latitude.toString();
     if (longCell) longCell.innerHTML = position.coords.longitude.toString();
 
   }
 
   createCenterControl(map: google.maps.Map) {
-    //need to place this into CSS file
-    const controlButton = document.createElement('button');
-    this.customButtonSetup(controlButton);
-
-    controlButton.textContent = 'Center Map';
-    controlButton.title = 'Click to recenter the map';
-    controlButton.type = 'button';
-    //need to think about how to restructre this. 
-    controlButton.addEventListener('click', () => {
-
+    // Create the control div
+    const controlButtonDiv = document.createElement('div');
+  
+    // Create an icon element with a button-like container
+    const centerControlButton = document.createElement('div');
+    centerControlButton.innerHTML = `
+      <div style="
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-right: 10px; /* Align with zoom controls */
+        margin-bottom: 5px; /* Adjust spacing above zoom buttons */
+        
+      ">
+        <i class="fa fa-crosshairs" style="font-size: 18px; color: #5f6368;"></i>
+      </div>
+    `;
+  
+    // Click event to re-center the map
+    centerControlButton.addEventListener('click', () => {
       if (this.currentPosition?.coords) {
         map.setCenter({
           lat: this.currentPosition.coords.latitude,
           lng: this.currentPosition.coords.longitude
         });
-        this.whatsMyPosition();
       } else {
         console.warn("Current position is not available");
       }
     });
-    return controlButton;
+  
+    // Append the button to the control div
+    controlButtonDiv.appendChild(centerControlButton);
+  
+    // Position it directly above the zoom control
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlButtonDiv);
+  
+    return controlButtonDiv;
   }
 
-  createStartRope(map: google.maps.Map) {
-    const startRope = document.createElement('button');
-    this.customButtonSetup(startRope);
+  // createStartRope(map: google.maps.Map) {
+  //   const startRope = document.createElement('button');
+  //   this.customButtonSetup(startRope);
 
-    startRope.textContent = 'Start Rope';
-    startRope.title = 'Click to start the rope';
-    startRope.type = 'button';
-    startRope.id = 'startRopeButton';
+  //   startRope.textContent = 'Start Rope';
+  //   startRope.title = 'Click to start the rope';
+  //   startRope.type = 'button';
+  //   startRope.id = 'startRopeButton';
 
-    startRope.addEventListener('click', () => {
-      // this.whatsMyPosition();
-      this.startRope(startRope);
-    });
-    return startRope;
+  //   startRope.addEventListener('click', () => {
+  //     // this.whatsMyPosition();
+  //     this.startRope(startRope);
+  //   });
+  //   return startRope;
 
-  }
+  // }
 
-  createEndRope(map: google.maps.Map) {
-    const endRope = document.createElement('button');
-    this.customButtonSetup(endRope);
+  // createEndRope(map: google.maps.Map) {
+  //   const endRope = document.createElement('button');
+  //   this.customButtonSetup(endRope);
 
-    endRope.textContent = 'End Rope';
-    endRope.title = 'Click to end the rope';
-    endRope.type = 'button';
-    endRope.id = 'endRopeButton';
-    endRope.style.display = 'none';
+  //   endRope.textContent = 'End Rope';
+  //   endRope.title = 'Click to end the rope';
+  //   endRope.type = 'button';
+  //   endRope.id = 'endRopeButton';
+  //   endRope.style.display = 'none';
 
-    endRope.addEventListener('click', () => {
-      this.whatsMyPosition();
-      this.endRope(endRope);
-    });
-    return endRope;
+  //   endRope.addEventListener('click', () => {
+  //     this.endRope(endRope);
+  //   });
+  //   return endRope;
 
-  }
+  // }
 
   createInfoBanner() {
     const infoSpeedTable = document.createElement('table');
@@ -315,35 +334,82 @@ export class MapBaseComponent implements AfterViewInit {
   }
   //also need to think if we can show heading etc info on the map. 
 
-  startRope(startRope: HTMLButtonElement) {
-    console.log('Start Rope Button Pressed!')
-    //can we add a pin? Should we display test for start of rope and end? 
-    startRope.style.display = 'none';
-    document.getElementById('endRopeButton')!.style.display = 'block';
-    this.startPosition = this.currentPosition;
-    console.log('Start Position Stored!')
-    console.log(this.currentPosition);
+  // startRope(startRope: HTMLButtonElement) {
+  //   console.log('Start Rope Button Pressed!')
+  //   //can we add a pin? Should we display test for start of rope and end? 
+  //   startRope.style.display = 'none';
+  //   document.getElementById('endRopeButton')!.style.display = 'block';
+  //   this.startPosition = this.currentPosition;
+  //   console.log('Start Position Stored!')
+  //   console.log(this.currentPosition);
+  // }
+
+  // endRope(endRope: HTMLButtonElement) {
+  //   console.log('End Rope Button Pressed!')
+  //   endRope.style.display = 'none';
+  //   document.getElementById('startRopeButton')!.style.display = 'block';
+  //   this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
+  //   //can we add a pin? Should we display test for start of rope and end? 
+  //   // startRope.style.display = 'none';
+  // }
+
+  createRopeControls() {
+    const ropeControlDiv = document.createElement('div');
+    ropeControlDiv.style.position = 'relative'; // Ensure the buttons stay in the same space
+    ropeControlDiv.style.width = '120px'; // Adjust as needed
+    ropeControlDiv.style.height = '40px'; // Adjust to match button size
+    ropeControlDiv.style.marginBottom = '30px'; // Moves it up by 10px
+  
+    const startRope = document.createElement('button');
+    const endRope = document.createElement('button');
+  
+    this.customButtonSetup(startRope);
+    this.customButtonSetup(endRope);
+  
+    startRope.textContent = 'Start Rope';
+    startRope.title = 'Click to start the rope';
+    startRope.id = 'startRopeButton';
+    startRope.style.position = 'absolute'; 
+    startRope.style.width = '100%'; // Make it fill the div
+    startRope.style.height = '100%'; 
+    
+  
+    endRope.textContent = 'End Rope';
+    endRope.title = 'Click to end the rope';
+    endRope.id = 'endRopeButton';
+    endRope.style.position = 'absolute';
+    endRope.style.width = '100%';
+    endRope.style.height = '100%';
+    endRope.style.display = 'none'; // Initially hidden
+  
+    startRope.addEventListener('click', () => this.startRope(startRope, endRope));
+    endRope.addEventListener('click', () => this.endRope(startRope, endRope));
+  
+    ropeControlDiv.appendChild(startRope);
+    ropeControlDiv.appendChild(endRope);
+  
+    return ropeControlDiv;
   }
 
-  endRope(endRope: HTMLButtonElement) {
-    console.log('End Rope Button Pressed!')
-    endRope.style.display = 'none';
-    document.getElementById('startRopeButton')!.style.display = 'block';
-    console.log('start position' + this.startPosition);
-    console.log(this.startPosition);
-    console.log('current position' + this.currentPosition);
-    console.log(this.currentPosition);
-    this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
-    //can we add a pin? Should we display test for start of rope and end? 
-    // startRope.style.display = 'none';
-  }
+startRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
+  console.log('Start Rope Button Pressed!');
+  this.startPosition = this.currentPosition;
+  console.log('Start Position Stored!', this.currentPosition);
 
-  whatsMyPosition() {
-    console.log(this.currentPosition);
-  }
+  startRope.style.display = 'none'; // Hide start button
+  endRope.style.display = 'block'; // Show end button
+}
 
-  onAddRope(currentPosition: GeolocationPosition) {
-    // this.logdataService.storeLocation( this.startPosition, currentPosition);
-  }
+endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
+  console.log('End Rope Button Pressed!');
+  this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
+
+  endRope.style.display = 'none'; // Hide end button
+  startRope.style.display = 'block'; // Show start button again
+}
+
+
+
+ 
 
 }
