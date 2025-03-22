@@ -149,7 +149,7 @@ export class MapBaseComponent implements AfterViewInit {
               word-wrap: break-word;
               border-radius: 8px;
             ">
-              <h3 style="margin: 0; font-size: 16px; color: #d9534f;">📌 Rope Details</h3>
+              <h3 style="margin: 0; font-size: 16px; color: #d9534f;">Rope Details</h3>
               <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
               <p><strong>Start:</strong> 
                 <span style="color: #5bc0de;">(${rope.startLocation.coords.latitude.toFixed(5)}, ${rope.startLocation.coords.longitude.toFixed(5)})</span>
