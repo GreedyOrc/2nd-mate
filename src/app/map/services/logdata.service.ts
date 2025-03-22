@@ -10,6 +10,10 @@ interface Rope {
   endLocation: GeolocationPosition;
 };
 
+interface CatchType {
+  name: string,
+  colour: string
+};
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +23,8 @@ export class LogdataService {
   userID!: string | null;
   ropes: Rope[] = [];
   ropes$ = new BehaviorSubject<Rope[]>([]);
+  catchtypes: CatchType[] = [];
+  catchtypes$ = new BehaviorSubject<CatchType[]>([]);
 
   constructor(private http: HttpClient, private auth: AngularFireAuth) {
     this.auth.authState.subscribe((user) => {
@@ -36,15 +42,15 @@ export class LogdataService {
 
     this.http
       .get<{ [key: string]: Rope }>(
-        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/${this.userID}.json`
+        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}.json`
       )
       .subscribe((response) => {
         if (response) {
           const ropesArray = Object.values(response);
           const liveRopes = ropesArray.filter(rope => rope.live === true);
-          
-          console.log('Filtered Live Ropes:', liveRopes); 
-  
+
+          console.log('Filtered Live Ropes:', liveRopes);
+
           this.ropes = liveRopes;
           this.ropes$.next(this.ropes.slice());
         } else {
@@ -72,7 +78,7 @@ export class LogdataService {
     this.ropes.push(ropeEntry);
     this.http
       .post<{ name: string }>(
-        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/${this.userID}.json`,
+        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}.json`,
         ropeEntry
       )
       .subscribe(() => {
@@ -87,4 +93,25 @@ export class LogdataService {
 
   }
 
+
+  getCatchTypes() {
+    this.http
+      .get<{ [key: string]: CatchType }>(
+        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/catchType.json`
+      )
+      .subscribe((response) => {
+        if (response) {
+          const catchArray = Object.values(response);
+                  
+          console.log('Got catch types!', catchArray)
+
+          this.catchtypes = catchArray;
+          this.catchtypes$.next(this.catchtypes.slice());
+        } else {
+          this.catchtypes = [];
+          this.catchtypes$.next([]);
+        }
+      });
+
+  }
 }

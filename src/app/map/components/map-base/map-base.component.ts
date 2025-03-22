@@ -38,7 +38,7 @@ export class MapBaseComponent implements AfterViewInit {
       center: { lat: 0, lng: 0 },
       zoom: 15,
       disableDefaultUI: true, // Removes all default controls[5]
-      gestureHandling: 'cooperative',
+      gestureHandling: 'greedy',
       zoomControl: true,
       zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_BOTTOM },
       fullscreenControl: true
@@ -66,7 +66,7 @@ export class MapBaseComponent implements AfterViewInit {
     infoBannerDiv.appendChild(infoControl);
     infoBannerDiv.appendChild(createRopeControl);
 
-    this.map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
+    
     // this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(startRopeControl);
     // this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(endRopeControl);
     this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(infoControl);
@@ -332,26 +332,7 @@ export class MapBaseComponent implements AfterViewInit {
     button.style.padding = '0 10px';
     button.style.textAlign = 'center';
   }
-  //also need to think if we can show heading etc info on the map. 
-
-  // startRope(startRope: HTMLButtonElement) {
-  //   console.log('Start Rope Button Pressed!')
-  //   //can we add a pin? Should we display test for start of rope and end? 
-  //   startRope.style.display = 'none';
-  //   document.getElementById('endRopeButton')!.style.display = 'block';
-  //   this.startPosition = this.currentPosition;
-  //   console.log('Start Position Stored!')
-  //   console.log(this.currentPosition);
-  // }
-
-  // endRope(endRope: HTMLButtonElement) {
-  //   console.log('End Rope Button Pressed!')
-  //   endRope.style.display = 'none';
-  //   document.getElementById('startRopeButton')!.style.display = 'block';
-  //   this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
-  //   //can we add a pin? Should we display test for start of rope and end? 
-  //   // startRope.style.display = 'none';
-  // }
+ 
 
   createRopeControls() {
     const ropeControlDiv = document.createElement('div');
@@ -407,9 +388,5 @@ endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
   endRope.style.display = 'none'; // Hide end button
   startRope.style.display = 'block'; // Show start button again
 }
-
-
-
- 
 
 }
