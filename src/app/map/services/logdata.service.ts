@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, map, Observable } from 'rxjs';
 
 interface Rope {
   time: number; // or Date if you prefer
@@ -93,25 +93,34 @@ export class LogdataService {
 
   }
 
-
-  getCatchTypes() {
-    this.http
+  getCatchTypes(): Observable<CatchType[]> {
+    return this.http
       .get<{ [key: string]: CatchType }>(
         `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/catchType.json`
       )
-      .subscribe((response) => {
-        if (response) {
-          const catchArray = Object.values(response);
-                  
-          console.log('Got catch types!', catchArray)
-
-          this.catchtypes = catchArray;
-          this.catchtypes$.next(this.catchtypes.slice());
-        } else {
-          this.catchtypes = [];
-          this.catchtypes$.next([]);
-        }
-      });
-
+      .pipe(
+        map((response) => response ? Object.values(response) : [])
+      );
   }
+
+  // getCatchTypes() {
+  //   this.http
+  //     .get<{ [key: string]: CatchType }>(
+  //       `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/catchType.json`
+  //     )
+  //     .subscribe((response) => {
+  //       if (response) {
+  //         const catchArray = Object.values(response);
+                  
+  //         console.log('Got catch types!', catchArray)
+
+  //         this.catchtypes = catchArray;
+  //         this.catchtypes$.next(this.catchtypes.slice());
+  //       } else {
+  //         this.catchtypes = [];
+  //         this.catchtypes$.next([]);
+  //       }
+  //     });
+
+  // }
 }
