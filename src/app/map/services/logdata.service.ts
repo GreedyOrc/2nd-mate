@@ -8,6 +8,8 @@ interface Rope {
   live: boolean;
   startLocation: GeolocationPosition;
   endLocation: GeolocationPosition;
+  catchtype: string;
+  colour: string;
 };
 
 interface CatchType {
@@ -70,10 +72,10 @@ export class LogdataService {
 
   }
 
-  storeLocation(startLocation: GeolocationPosition, endLocation: GeolocationPosition) {
+  storeLocation(startLocation: GeolocationPosition, endLocation: GeolocationPosition, catchtype: string, colour: string) {
     const time = Date.now();
     const live = true;
-    const ropeEntry: Rope = { time, live, startLocation, endLocation };
+    const ropeEntry: Rope = { time, live, startLocation, endLocation, catchtype, colour };
 
     this.ropes.push(ropeEntry);
     this.http
@@ -103,6 +105,7 @@ export class LogdataService {
       );
   }
 
+  //########### old attempt at get catch types. 
   // getCatchTypes() {
   //   this.http
   //     .get<{ [key: string]: CatchType }>(

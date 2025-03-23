@@ -141,7 +141,7 @@ export class MapBaseComponent implements AfterViewInit {
           icon: {
             path: google.maps.SymbolPath.CIRCLE, // Small circle
             scale: 6,
-            fillColor: "#FF4500", // Bright orange-red
+            fillColor: rope.colour, // Bright orange-red
             fillOpacity: 1,
             strokeColor: "#ffffff",
             strokeWeight: 2,
@@ -162,11 +162,14 @@ export class MapBaseComponent implements AfterViewInit {
             ">
               <h3 style="margin: 0; font-size: 16px; color: #d9534f;">Rope Details</h3>
               <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
+              <p><strong>Catch Type:</strong> 
+                <span >${rope.catchtype}</span>
+              </p>
               <p><strong>Start:</strong> 
-                <span style="color: #5bc0de;">(${rope.startLocation.coords.latitude.toFixed(5)}, ${rope.startLocation.coords.longitude.toFixed(5)})</span>
+                <span >(${rope.startLocation.coords.latitude.toFixed(5)}, ${rope.startLocation.coords.longitude.toFixed(5)})</span>
               </p>
               <p><strong>End:</strong> 
-                <span style="color: #5bc0de;">(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
+                <span >(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
               </p>
             </div>
           `,
@@ -400,7 +403,7 @@ export class MapBaseComponent implements AfterViewInit {
     const updateDropdown = () => {
       select.innerHTML = ''; // Clear existing options
       this.catchTypes.forEach((type) => {
-        console.log('inside updatedropdown ')
+        // console.log('inside updatedropdown ')
         const option = document.createElement('option');
         option.value = type.name;
         option.textContent = type.name;
@@ -442,12 +445,17 @@ export class MapBaseComponent implements AfterViewInit {
 
   endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
     console.log('End Rope Button Pressed!');
-    this.logdataService.storeLocation(this.startPosition!, this.currentPosition!);
+    console.log(this.selectedCatchType);
+    const colour = this.getColourForCatchType(this.selectedCatchType);
+    this.logdataService.storeLocation(this.startPosition!, this.currentPosition!, this.selectedCatchType, colour );
 
     endRope.style.display = 'none'; // Hide end button
     startRope.style.display = 'block'; // Show start button again
   }
 
-
+  getColourForCatchType(catchTypeName: string): string {
+    const catchType = this.catchTypes.find(ct => ct.name === catchTypeName);
+    return catchType ? catchType.colour : '#000000'; // Return undefined if not found
+  }
 
 }
