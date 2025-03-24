@@ -10,6 +10,7 @@ interface Rope {
   endLocation: GeolocationPosition;
   catchtype: string;
   colour: string;
+  rating: string;
 };
 
 interface CatchType {
@@ -75,7 +76,8 @@ export class LogdataService {
   storeLocation(startLocation: GeolocationPosition, endLocation: GeolocationPosition, catchtype: string, colour: string) {
     const time = Date.now();
     const live = true;
-    const ropeEntry: Rope = { time, live, startLocation, endLocation, catchtype, colour };
+    const rating = "0";
+    const ropeEntry: Rope = { time, live, startLocation, endLocation, catchtype, colour, rating};
 
     this.ropes.push(ropeEntry);
     this.http
@@ -104,6 +106,24 @@ export class LogdataService {
         map((response) => response ? Object.values(response) : [])
       );
   }
+
+  updateRope(ropeId: string, updatedData: Partial<Rope>): Observable<Rope> {
+    const url = `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}/${ropeId}.json`;
+  
+    return this.http.put<Rope>(url, updatedData).pipe(
+      map((response) => {
+        const index = this.ropes.findIndex(rope => rope.time === updatedData.time);
+        if (index !== -1) {
+          this.ropes[index] = { ...this.ropes[index], ...updatedData };
+        }
+        this.ropes$.next(this.ropes.slice());
+        return response;
+      })
+    );
+  }
+
+
+
 
   //########### old attempt at get catch types. 
   // getCatchTypes() {

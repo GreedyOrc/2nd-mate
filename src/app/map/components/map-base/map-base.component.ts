@@ -171,7 +171,7 @@ export class MapBaseComponent implements AfterViewInit {
               <p><strong>End:</strong> 
                 <span >(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
               </p>
-              <p><button> Haul Rope </button> </p>
+              <p><button (click)="haulRope('${rope.id}')">Haul Rope</button> </p>
             </div>
           `,
         });
@@ -221,31 +221,34 @@ export class MapBaseComponent implements AfterViewInit {
 
   }
 
+  createCenterControl2(map: google.maps.Map) {
+    const controlButtonDiv = document.createElement('div');
+
+    // Create an icon element with a button-like container
+    const centerControlButton = document.createElement('div');
+
+    centerControlButton.style.width = '40px';
+    centerControlButton.style.height = '40px';
+    centerControlButton.style.display = 'flex';
+    centerControlButton.style.alignItems ='center';
+    centerControlButton.style.justifyContent = 'center';
+    centerControlButton.style.backgroundColor = 'white';
+    centerControlButton.style.borderRadius = '4px';
+    centerControlButton.style.boxShadow = '0px 1px 4px rgba(0, 0, 0, 0.3)';
+    centerControlButton.style.cursor = 'pointer';
+    centerControlButton.style.marginRight = '10px';
+    centerControlButton.style.marginBottom = '5px';
+
+  }
+
   createCenterControl(map: google.maps.Map) {
     // Create the control div
     const controlButtonDiv = document.createElement('div');
 
     // Create an icon element with a button-like container
     const centerControlButton = document.createElement('div');
-    centerControlButton.innerHTML = `
-      <div style="
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: white;
-        border-radius: 4px;
-        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-        margin-right: 10px; 
-        margin-bottom: 5px; 
-        
-      ">
-        <i class="fa fa-crosshairs" style="font-size: 18px; color: #5f6368;"></i>
-      </div>
-    `;
-
+    this.customStyleControlButton(centerControlButton);
+    
     // Click event to re-center the map
     centerControlButton.addEventListener('click', () => {
       if (this.currentPosition?.coords) {
@@ -267,7 +270,22 @@ export class MapBaseComponent implements AfterViewInit {
     return controlButtonDiv;
   }
 
- 
+  customStyleControlButton(centerControlButton: HTMLElement){
+    centerControlButton.style.width = '40px';
+    centerControlButton.style.height = '40px';
+    centerControlButton.style.display = 'flex';
+    centerControlButton.style.alignItems ='center';
+    centerControlButton.style.justifyContent = 'center';
+    centerControlButton.style.backgroundColor = 'white';
+    centerControlButton.style.borderRadius = '4px';
+    centerControlButton.style.boxShadow = '0px 1px 4px rgba(0, 0, 0, 0.3)';
+    centerControlButton.style.cursor = 'pointer';
+    centerControlButton.style.marginRight = '10px';
+    centerControlButton.style.marginBottom = '5px';
+    centerControlButton.style.fontSize = '18px';
+    centerControlButton.style.color = '#5f6368';
+    centerControlButton.innerHTML = `<i class="fa fa-crosshairs"></i>`;
+  }
 
   createInfoBanner() {
     const infoSpeedTable = document.createElement('table');
@@ -428,6 +446,15 @@ export class MapBaseComponent implements AfterViewInit {
   getColourForCatchType(catchTypeName: string): string {
     const catchType = this.catchTypes.find(ct => ct.name === catchTypeName);
     return catchType ? catchType.colour : '#000000'; // Return undefined if not found
+  }
+
+  haulRope(ropeId: string) {
+    console.log("Haul Rope Button Pressed");
+    const rating = prompt("Please provide rating on the hauled rope:");
+    
+    if (rating !== null) {
+      this.logdataService.updateRope(ropeId, { live: false, rating: rating })
+    }
   }
 
 }
