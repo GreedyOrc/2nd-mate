@@ -139,9 +139,9 @@ export class MapBaseComponent implements AfterViewInit {
           position: ropePath[1], // Set position to the end of the rope
           map: this.map,
           icon: {
-            path: google.maps.SymbolPath.CIRCLE, // Small circle
+            path: google.maps.SymbolPath.CIRCLE, 
             scale: 6,
-            fillColor: rope.colour, // Bright orange-red
+            fillColor: rope.colour,
             fillOpacity: 1,
             strokeColor: "#ffffff",
             strokeWeight: 2,
@@ -160,7 +160,7 @@ export class MapBaseComponent implements AfterViewInit {
               word-wrap: break-word;
               border-radius: 8px;
             ">
-              <h3 style="margin: 0; font-size: 16px; color: #d9534f;">Rope Details</h3>
+              <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details</h3>
               <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
               <p><strong>Catch Type:</strong> 
                 <span >${rope.catchtype}</span>
@@ -171,6 +171,7 @@ export class MapBaseComponent implements AfterViewInit {
               <p><strong>End:</strong> 
                 <span >(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
               </p>
+              <p><button> Haul Rope </button> </p>
             </div>
           `,
         });
@@ -212,8 +213,7 @@ export class MapBaseComponent implements AfterViewInit {
       });
     }
 
-    // Update table cells
-    // error happens when first loading - then ok's out. Maybe need to catch the erorr however it is updating. 
+    // Update table cells 
     if (speedCell) speedCell.innerHTML = this.speed.toFixed(2) + ' m/s';
     if (directionCell) directionCell.innerHTML = this.heading.toFixed(2) + '°';
     if (latCell) latCell.innerHTML = position.coords.latitude.toString();
@@ -238,8 +238,8 @@ export class MapBaseComponent implements AfterViewInit {
         border-radius: 4px;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
         cursor: pointer;
-        margin-right: 10px; /* Align with zoom controls */
-        margin-bottom: 5px; /* Adjust spacing above zoom buttons */
+        margin-right: 10px; 
+        margin-bottom: 5px; 
         
       ">
         <i class="fa fa-crosshairs" style="font-size: 18px; color: #5f6368;"></i>
@@ -267,39 +267,7 @@ export class MapBaseComponent implements AfterViewInit {
     return controlButtonDiv;
   }
 
-  // createStartRope(map: google.maps.Map) {
-  //   const startRope = document.createElement('button');
-  //   this.customButtonSetup(startRope);
-
-  //   startRope.textContent = 'Start Rope';
-  //   startRope.title = 'Click to start the rope';
-  //   startRope.type = 'button';
-  //   startRope.id = 'startRopeButton';
-
-  //   startRope.addEventListener('click', () => {
-  //     // this.whatsMyPosition();
-  //     this.startRope(startRope);
-  //   });
-  //   return startRope;
-
-  // }
-
-  // createEndRope(map: google.maps.Map) {
-  //   const endRope = document.createElement('button');
-  //   this.customButtonSetup(endRope);
-
-  //   endRope.textContent = 'End Rope';
-  //   endRope.title = 'Click to end the rope';
-  //   endRope.type = 'button';
-  //   endRope.id = 'endRopeButton';
-  //   endRope.style.display = 'none';
-
-  //   endRope.addEventListener('click', () => {
-  //     this.endRope(endRope);
-  //   });
-  //   return endRope;
-
-  // }
+ 
 
   createInfoBanner() {
     const infoSpeedTable = document.createElement('table');
@@ -409,6 +377,10 @@ export class MapBaseComponent implements AfterViewInit {
         option.textContent = type.name;
         select.appendChild(option);
       });
+      
+      //Bug fix - when left as default, no catch type was being saved. This fixes it
+      this.selectedCatchType = select.value;
+      
     };
 
     // Initial population (if data is already available)
@@ -417,7 +389,7 @@ export class MapBaseComponent implements AfterViewInit {
     // Listen for data updates (wait for Firebase data)
     this.logdataService.getCatchTypes().subscribe((types) => {
       this.catchTypes = types;
-      updateDropdown(); // Update the dropdown options dynamically
+      updateDropdown(); 
     });
 
    
