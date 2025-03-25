@@ -2,6 +2,7 @@ import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { LogdataService } from '../../services/logdata.service';
 
 
+
 @Component({
   selector: 'app-map-base',
   templateUrl: './map-base.component.html',
@@ -148,18 +149,14 @@ export class MapBaseComponent implements AfterViewInit {
           },
         });
 
-        // Create an InfoWindow for the marker
-        const infoWindow = new google.maps.InfoWindow({
-          content: `
-            <div style="
-              font-family: Arial, sans-serif;
-              font-size: 14px;
-              color: #333;
-              padding: 10px;
-              max-width: 250px;
-              word-wrap: break-word;
-              border-radius: 8px;
-            ">
+        const infoWindowDiv = document.createElement('div');
+        this.customStyleInfoWindow(infoWindowDiv);
+        const infoWindow = new google.maps.InfoWindow
+        //set style for pop out window
+        infoWindow.setOptions(infoWindowDiv);
+
+        infoWindow.setContent(
+               `
               <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details</h3>
               <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
               <p><strong>Catch Type:</strong> 
@@ -171,10 +168,23 @@ export class MapBaseComponent implements AfterViewInit {
               <p><strong>End:</strong> 
                 <span >(${rope.endLocation.coords.latitude.toFixed(5)}, ${rope.endLocation.coords.longitude.toFixed(5)})</span>
               </p>
-              <p><button (click)="haulRope('${rope.id}')">Haul Rope</button> </p>
-            </div>
-          `,
-        });
+              <p><button id="haulRopeButton-${rope.id}">Haul Rope</button> </p>
+              `);
+              console.log(rope);
+          
+
+              google.maps.event.addListener(infoWindow, 'domready', () => {
+                const haulRopeButton = document.getElementById(`haulRopeButton-${rope.id}`);
+                if (haulRopeButton) {
+                  haulRopeButton.addEventListener('click', () => {
+                    console.log(`Hauling Rope: ${rope.id}`);
+                    this.haulRope(rope.id);
+                  });
+                } else {
+                  console.log('Cannot find Haul Rope Button!');
+                }
+              });
+
 
         // Add click event listener to the marker instead of the polyline
         iconMarker.addListener("click", () => {
@@ -186,6 +196,14 @@ export class MapBaseComponent implements AfterViewInit {
     });
   }
 
+  customStyleInfoWindow(InfoWindow: HTMLElement){
+    InfoWindow.style.fontSize = '14px';
+    InfoWindow.style.color = '#333';
+    InfoWindow.style.padding = '10px';
+    InfoWindow.style.maxWidth = '250px';
+    InfoWindow.style.wordWrap = 'break-word';
+    InfoWindow.style.borderRadius = '8px';
+  }
 
   private updatePosition(position: GeolocationPosition) {
     this.currentPosition = position;
@@ -221,26 +239,7 @@ export class MapBaseComponent implements AfterViewInit {
 
   }
 
-  createCenterControl2(map: google.maps.Map) {
-    const controlButtonDiv = document.createElement('div');
-
-    // Create an icon element with a button-like container
-    const centerControlButton = document.createElement('div');
-
-    centerControlButton.style.width = '40px';
-    centerControlButton.style.height = '40px';
-    centerControlButton.style.display = 'flex';
-    centerControlButton.style.alignItems ='center';
-    centerControlButton.style.justifyContent = 'center';
-    centerControlButton.style.backgroundColor = 'white';
-    centerControlButton.style.borderRadius = '4px';
-    centerControlButton.style.boxShadow = '0px 1px 4px rgba(0, 0, 0, 0.3)';
-    centerControlButton.style.cursor = 'pointer';
-    centerControlButton.style.marginRight = '10px';
-    centerControlButton.style.marginBottom = '5px';
-
-  }
-
+ 
   createCenterControl(map: google.maps.Map) {
     // Create the control div
     const controlButtonDiv = document.createElement('div');

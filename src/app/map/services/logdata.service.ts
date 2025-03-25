@@ -108,6 +108,9 @@ export class LogdataService {
   }
 
   updateRope(ropeId: string, updatedData: Partial<Rope>): Observable<Rope> {
+    console.log('inside Update Rope');
+    console.log('Rope ID: ' + ropeId);
+    console.log('Rating: ' + updatedData.rating);
     const url = `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}/${ropeId}.json`;
   
     return this.http.put<Rope>(url, updatedData).pipe(
