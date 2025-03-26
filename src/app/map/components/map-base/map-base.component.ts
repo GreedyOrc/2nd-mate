@@ -42,7 +42,7 @@ export class MapBaseComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.initMap();
     this.initGeolocation();
-
+    console.log('Get Ropes: ' + this.logdataService.getRopes());
     this.logdataService.ropes$.subscribe(ropes => {
       this.drawRopesOnMap(ropes);
     });
@@ -170,7 +170,9 @@ export class MapBaseComponent implements AfterViewInit {
               </p>
               <p><button id="haulRopeButton-${rope.id}">Haul Rope</button> </p>
               `);
-              console.log(rope);
+              
+              // used to help debug what information was being passed through to LogData Service. 
+              // console.log(rope);
           
 
               google.maps.event.addListener(infoWindow, 'domready', () => {
@@ -447,13 +449,22 @@ export class MapBaseComponent implements AfterViewInit {
     return catchType ? catchType.colour : '#000000'; // Return undefined if not found
   }
 
-  haulRope(ropeId: string) {
+  haulRope(ropeID: string) {
     console.log("Haul Rope Button Pressed");
     const rating = prompt("Please provide rating on the hauled rope:");
     
     if (rating !== null) {
-      this.logdataService.updateRope(ropeId, { live: false, rating: rating })
+      this.logdataService.updateRope(ropeID, { live: false, rating: rating });
+      console.log(`Rope ${ropeID} updated successfully.`);
+      
+      this.logdataService.ropes$.subscribe(ropes => {
+        this.drawRopesOnMap(ropes);
+        console.log(ropes);
+      });
+
     }
+
+    
   }
 
 }

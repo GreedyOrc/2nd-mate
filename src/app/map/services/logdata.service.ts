@@ -4,13 +4,14 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { BehaviorSubject, map, Observable } from 'rxjs';
 
 interface Rope {
+  id?: string;
   time: number; // or Date if you prefer
   live: boolean;
   startLocation: GeolocationPosition;
   endLocation: GeolocationPosition;
   catchtype: string;
   colour: string;
-  rating: string;
+  rating?: string;
 };
 
 interface CatchType {
@@ -49,10 +50,15 @@ export class LogdataService {
       )
       .subscribe((response) => {
         if (response) {
-          const ropesArray = Object.values(response);
+          console.log('before mapping '+ response)
+          const ropesArray = Object.entries(response).map(([id, rope]) => ({
+            id, // Store the Firebase key
+            ...rope, // Spread the rope object properties
+          }));
+
           const liveRopes = ropesArray.filter(rope => rope.live === true);
 
-          console.log('Filtered Live Ropes:', liveRopes);
+          console.log('Filtered Live Ropes:', ropesArray);
 
           this.ropes = liveRopes;
           this.ropes$.next(this.ropes.slice());
@@ -76,8 +82,7 @@ export class LogdataService {
   storeLocation(startLocation: GeolocationPosition, endLocation: GeolocationPosition, catchtype: string, colour: string) {
     const time = Date.now();
     const live = true;
-    const rating = "0";
-    const ropeEntry: Rope = { time, live, startLocation, endLocation, catchtype, colour, rating};
+    const ropeEntry: Rope = { time, live, startLocation, endLocation, catchtype, colour};
 
     this.ropes.push(ropeEntry);
     this.http
@@ -107,22 +112,21 @@ export class LogdataService {
       );
   }
 
-  updateRope(ropeId: string, updatedData: Partial<Rope>): Observable<Rope> {
+  updateRope(ropeId: string, updatedData: Partial<Rope>) {
     console.log('inside Update Rope');
-    console.log('Rope ID: ' + ropeId);
-    console.log('Rating: ' + updatedData.rating);
-    const url = `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}/${ropeId}.json`;
-  
-    return this.http.put<Rope>(url, updatedData).pipe(
-      map((response) => {
-        const index = this.ropes.findIndex(rope => rope.time === updatedData.time);
-        if (index !== -1) {
-          this.ropes[index] = { ...this.ropes[index], ...updatedData };
-        }
-        this.ropes$.next(this.ropes.slice());
-        return response;
-      })
-    );
+    console.log('Rope ID:', ropeId);
+    console.log('Updated Data:', updatedData);
+    
+    this.http
+      .patch<{ name: string }>(
+        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}/${ropeId}.json`,
+        updatedData
+        
+      )
+      .subscribe(() => {
+        this.ropes$.next(this.ropes);
+      });
+
   }
 
 
