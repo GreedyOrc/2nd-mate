@@ -10,7 +10,7 @@ import { LogdataService } from '../../services/logdata.service';
 })
 export class MapBaseComponent implements AfterViewInit {
   
-  
+  followPosition: boolean = true;
   startPosition?: GeolocationPosition;
   map!: google.maps.Map;
   marker!: google.maps.Marker;
@@ -20,6 +20,7 @@ export class MapBaseComponent implements AfterViewInit {
   catchTypes: { name: string; colour: string }[] = [];
   selectedCatchType: string = '';
   ropesPolylines: google.maps.Polyline[] = []; // Store polyline references
+  
 
   constructor(private logdataService: LogdataService) { }
 
@@ -221,19 +222,30 @@ export class MapBaseComponent implements AfterViewInit {
     const longCell = document.getElementById('longCell');
 
     // Update marker rotation if heading available
-    if (position.coords.heading) {
+    
       this.marker.setIcon({
         path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
         rotation: position.coords.heading,
-        scale: 5
+        scale: 5,
+        strokeColor: "#FF0000"
       });
-    }
+    
 
     // Update table cells 
     if (speedCell) speedCell.innerHTML = this.speed.toFixed(2) + ' m/s';
     if (directionCell) directionCell.innerHTML = this.heading.toFixed(2) + '°';
     if (latCell) latCell.innerHTML = position.coords.latitude.toString();
     if (longCell) longCell.innerHTML = position.coords.longitude.toString();
+    
+    if(this.followPosition) {
+      if (position) {
+        // console.log('Inside position check')
+        this.map.setCenter({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        });
+      }
+    }
 
   }
 
