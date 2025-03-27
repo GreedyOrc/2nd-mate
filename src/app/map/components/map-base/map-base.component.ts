@@ -9,11 +9,8 @@ import { LogdataService } from '../../services/logdata.service';
   styleUrls: ['./map-base.component.css']
 })
 export class MapBaseComponent implements AfterViewInit {
-
-  constructor(private logdataService: LogdataService) { }
-
-  @ViewChild('mapContainer', { static: false }) mapContainer!: ElementRef;
-
+  
+  
   startPosition?: GeolocationPosition;
   map!: google.maps.Map;
   marker!: google.maps.Marker;
@@ -22,19 +19,19 @@ export class MapBaseComponent implements AfterViewInit {
   heading: number = 0;
   catchTypes: { name: string; colour: string }[] = [];
   selectedCatchType: string = '';
-
   ropesPolylines: google.maps.Polyline[] = []; // Store polyline references
 
-  //  #############~  Uncomment to return to default ~#####################################
+  constructor(private logdataService: LogdataService) { }
 
+
+
+
+  @ViewChild('mapContainer', { static: false }) mapContainer!: ElementRef;
   //Attempt at drop down menu
-  ngOnInit() {
-
-    this.logdataService.getCatchTypes();
+  ngOnInit() {    
     this.logdataService.catchtypes$.subscribe((types) => {
       this.catchTypes = types || [];
     });
-
   }
 
 
@@ -42,7 +39,6 @@ export class MapBaseComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.initMap();
     this.initGeolocation();
-    console.log('Get Ropes: ' + this.logdataService.getRopes());
     this.logdataService.ropes$.subscribe(ropes => {
       this.drawRopesOnMap(ropes);
     });

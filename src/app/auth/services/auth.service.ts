@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  constructor(private auth: AngularFireAuth, private router: Router){  }
+  constructor(private auth: AngularFireAuth, private router: Router){ }
 
   register(email: string, password: string){
     return this.auth.createUserWithEmailAndPassword(email, password)
