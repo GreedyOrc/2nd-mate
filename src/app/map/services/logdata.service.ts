@@ -42,7 +42,7 @@ export class LogdataService {
   getRopes() {
     if (!this.userID) {
       this.ropes = [];
-      this.ropes$.next([...this.ropes]); // Ensure a new reference
+      this.ropes$.next([...this.ropes]); 
       return;
     }
   
@@ -54,85 +54,19 @@ export class LogdataService {
       if (response) {
         console.log('Get ropes response: ', response);
   
-        // Convert response object into an array with IDs preserved
+        
         this.ropes = Object.entries(response).map(([id, rope]) => ({
-          id,  // Preserve Firebase ID
+          id,  
           ...rope
         }));
   
-        this.ropes$.next([...this.ropes]); // Ensure a new array reference
+        this.ropes$.next([...this.ropes]); 
       } else {
         this.ropes = [];
         this.ropes$.next([]);
       }
     });
   }
-
-    // getRopes(){
-    //   if (!this.userID) {
-    //         this.ropes = [];
-    //         this.ropes$.next([...this.ropes]);
-    //         return;
-    //       }
-    //   this.http.get<Rope[]>(`https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}.json`, {
-    //     params:{
-    //       'auth': this.authToken
-    //     }
-    //   }).subscribe(response => {
-    //     if(response) {
-    //       console.log('Get ropes response: ', response);
-    //       this.ropes = response;
-    //       this.ropes$.next(this.ropes.slice());
-    //     }
-    //   })
-    // }
-
-
-
-  //Old Get Response - Testing 28/03/2028
-  // getRopes() {
-  //   if (!this.userID) {
-  //     this.ropes = [];
-  //     this.ropes$.next(this.ropes.slice());
-  //     return;
-  //   }
-  //     //will need to change this. (shouldn't need to do any mapping once complete)
-  //   this.http
-  //     .get<{ [key: string]: Rope }>(
-  //       `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}.json`
-  //       ,
-  //       {params: {'auth': this.authToken}}).subscribe((response) => {
-  //         if (response) {
-  //           // console.log('before mapping ' + response)
-  //           const ropesArray = Object.entries(response).map(([id, rope]) => ({
-  //             id, 
-  //             ...rope,
-  //           }));
-
-  //           const liveRopes = ropesArray.filter(rope => rope.live === true);
-
-  //           // console.log('Filtered Live Ropes:', ropesArray);
-
-  //           this.ropes = liveRopes;
-  //           this.ropes$.next(this.ropes.slice());
-  //         } else {
-  //           this.ropes = [];
-  //           this.ropes$.next([]);
-  //         }
-  //       });
-
-    // ######## Old items
-
-    // this.http.get<Rope[]>('https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/' + this.userID + '.json').subscribe(response => {
-    //   console.log('Get Ropes!'); 
-    //   console.log(response);        
-    //   this.ropes = response;
-    //   this.ropes$.next(this.ropes.slice());
-    // })
-
-  // }
-
-  //##TODO need to change to use models throughout all the calls. 
 
   storeLocation(rope: Rope) {
     this.http
@@ -143,10 +77,9 @@ export class LogdataService {
       )
       .subscribe(response => {
         if (response && response.name) {
-          // Create a new Rope object with the Firebase-generated ID
           const newRope = { ...rope, id: response.name };
           this.ropes.push(newRope);
-          this.ropes$.next([...this.ropes]); // Ensure Angular detects the change
+          this.ropes$.next([...this.ropes]);
         }
       });
   
@@ -186,53 +119,8 @@ export class LogdataService {
       )
       .subscribe(() => {
         this.ropes = this.ropes.map(rope => rope.ropeid === ropeId ? { ...rope, ...updatedData } : rope);
-        this.ropes$.next([...this.ropes]); // Ensure the update is reflected
+        this.ropes$.next([...this.ropes]); 
       });
   }
 
-  // updateRope(ropeId: string, updatedData: Partial<Rope>) {
-  //   // console.log('inside Update Rope');
-  //   // console.log('Rope ID:', ropeId);
-  //   // console.log('Updated Data:', updatedData);
-
-  //   this.http
-  //     .patch<{ name: string }>(
-  //       `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}/${ropeId}.json`,
-  //       updatedData,
-        
-  //       {
-  //         params: {
-  //           'auth': this.authToken
-  //         }
-  //       }
-  //     )
-  //     .subscribe(() => {
-  //       this.ropes$.next(this.ropes);
-  //     });
-  // }
-
-
-
-
-  //########### old attempt at get catch types. 
-  // getCatchTypes() {
-  //   this.http
-  //     .get<{ [key: string]: CatchType }>(
-  //       `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/catchType.json`
-  //     )
-  //     .subscribe((response) => {
-  //       if (response) {
-  //         const catchArray = Object.values(response);
-
-  //         console.log('Got catch types!', catchArray)
-
-  //         this.catchtypes = catchArray;
-  //         this.catchtypes$.next(this.catchtypes.slice());
-  //       } else {
-  //         this.catchtypes = [];
-  //         this.catchtypes$.next([]);
-  //       }
-  //     });
-
-  // }
 }
