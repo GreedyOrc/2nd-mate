@@ -10,7 +10,7 @@ import { LogdataService } from '../../services/logdata.service';
 })
 export class MapBaseComponent implements AfterViewInit {
   
-  followPosition: boolean = true;
+  followPosition: boolean = false;
   startPosition?: GeolocationPosition;
   map!: google.maps.Map;
   marker!: google.maps.Marker;
@@ -23,8 +23,6 @@ export class MapBaseComponent implements AfterViewInit {
   
 
   constructor(private logdataService: LogdataService) { }
-
-
 
 
   @ViewChild('mapContainer', { static: false }) mapContainer!: ElementRef;
