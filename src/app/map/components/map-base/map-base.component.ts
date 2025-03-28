@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { LogdataService } from '../../services/logdata.service';
+import { Rope } from '../../models/ropes.model';
 
 
 
@@ -40,6 +41,7 @@ export class MapBaseComponent implements AfterViewInit {
     this.initGeolocation();
     this.logdataService.ropes$.subscribe(ropes => {
       this.drawRopesOnMap(ropes);
+      console.log('ngAfterViewInit - Ropes: ', ropes);
     });
   }
 
@@ -444,7 +446,11 @@ export class MapBaseComponent implements AfterViewInit {
     console.log('End Rope Button Pressed!');
     console.log(this.selectedCatchType);
     const colour = this.getColourForCatchType(this.selectedCatchType);
-    this.logdataService.storeLocation(this.startPosition!, this.currentPosition!, this.selectedCatchType, colour );
+    const live = true;
+    const time = Date.now();
+    // const tempID = length(this.ropes$) + '';
+    const limitedRope = new Rope(time, live,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour);
+    this.logdataService.storeLocation(limitedRope);
 
     endRope.style.display = 'none'; // Hide end button
     startRope.style.display = 'block'; // Show start button again
