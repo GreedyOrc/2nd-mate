@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { BehaviorSubject, map, Observable } from 'rxjs';
+import { BehaviorSubject, map, Observable, Subject } from 'rxjs';
 import { Rope } from '../models/ropes.model';
 import { CatchType } from '../models/catchtype.model';
 
@@ -13,6 +13,7 @@ import { CatchType } from '../models/catchtype.model';
 })
 export class LogdataService {
 
+  ropeUpdated$ = new Subject<void>();
   userID!: string | null;
   ropes: Rope[] = [];
   catchtypes: CatchType[] = [];
@@ -27,64 +28,91 @@ export class LogdataService {
         user?.getIdToken(false).then(token => {
           this.authToken = token;
           this.getRopes();
-          this.getCatchTypes()
         })
       } else {
         this.getRopes();
-        this.getCatchTypes()
       }
 
     })
   }
 
 
-
-  getRopes() {
-    if (!this.userID) {
+getRopes(){
+      if (!this.userID) {
       this.ropes = [];
-      this.ropes$.next([...this.ropes]); 
+      this.ropes$.next(this.ropes.slice()); 
       return;
     }
-  
-    this.http.get<{ [key: string]: Rope }>(`https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}.json`, {
+       this.http.get< Rope[] >(`https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/live-ropes/${this.userID}.json`, {
       params: {
         'auth': this.authToken
       }
     }).subscribe(response => {
       if (response) {
         console.log('Get ropes response: ', response);
+        this.ropes = response;
+        this.ropes$.next(this.ropes.slice());
+      }    
+    });
+}
+
+
+ //Old code - 29/03/2025
+
+  // getRopes() {
+  //   if (!this.userID) {
+  //     this.ropes = [];
+  //     this.ropes$.next([...this.ropes]); 
+  //     return;
+  //   }
+  
+  //   this.http.get<{ [key: string]: Rope }>(`https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/live-ropes/${this.userID}.json`, {
+  //     params: {
+  //       'auth': this.authToken
+  //     }
+  //   }).subscribe(response => {
+  //     if (response) {
+  //       console.log('Get ropes response: ', response);
   
         
-        this.ropes = Object.entries(response).map(([id, rope]) => ({
-          id,  
-          ...rope
-        }));
+  //       this.ropes = Object.entries(response).map(([id, rope]) => ({
+  //         id,  
+  //         ...rope
+  //       })).filter(rope => rope.live === true);
   
-        this.ropes$.next([...this.ropes]); 
-      } else {
-        this.ropes = [];
-        this.ropes$.next([]);
-      }
-    });
-  }
+  //       this.ropes$.next([...this.ropes]); 
+  //     } else {
+  //       this.ropes = [];
+  //       this.ropes$.next([]);
+  //     }
+  //   });
+  // }
 
   storeLocation(rope: Rope) {
-    this.http
-      .post<{ name: string }>(
-        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}.json`,
-        rope,
-        { params: { 'auth': this.authToken } }
-      )
-      .subscribe(response => {
-        if (response && response.name) {
-          const newRope = { ...rope, id: response.name };
-          this.ropes.push(newRope);
-          this.ropes$.next([...this.ropes]);
-        }
-      });
-  
-    console.log('ropes, ', this.ropes);
+    this.ropes.push(rope);
+    this.http.put<Rope>(`https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/live-ropes/${this.userID}.json`,
+      this.ropes,{ params: { 'auth': this.authToken } }).subscribe();
+    this.ropes$.next(this.ropes.slice()); 
   }
+
+  // ######### Old Code 29/03/2025 
+  // storeLocation(rope: Rope) {
+  //   this.http
+  //     .post<{ name: string }>(
+  //       `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/live-ropes/${this.userID}.json`,
+  //       rope,
+  //       { params: { 'auth': this.authToken } }
+  //     )
+  //     .subscribe(response => {
+  //       if (response && response.name) {
+  //         const newRope = { ...rope, id: response.name };
+  //         this.ropes.push(newRope);
+  //         this.ropes$.next([...this.ropes]);
+  //       }
+  //     });
+  
+  //   console.log('ropes, ', this.ropes);
+  // }
 
   generateSortableNumber(typeOfCatch: string): number {
     const timestamp = Date.now(); 
@@ -110,17 +138,36 @@ export class LogdataService {
   }
 
 
-  updateRope(ropeId: string, updatedData: Partial<Rope>) {
-    this.http
-      .patch(
-        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/ropes/${this.userID}/${ropeId}.json`,
-        updatedData,
-        { params: { 'auth': this.authToken } }
-      )
-      .subscribe(() => {
-        this.ropes = this.ropes.map(rope => rope.ropeid === ropeId ? { ...rope, ...updatedData } : rope);
-        this.ropes$.next([...this.ropes]); 
-      });
-  }
+  updateRope(rope: Rope, rating: string) {
+    let i = this.ropes.map(f => f.dropTime).indexOf(rope.dropTime);
 
+    if (i !== -1) {
+      const hauledRope = {
+        ...this.ropes[i],
+        rating: rating,
+        halledTime: Date.now() 
+      };
+
+      // Post the updated rope to "hauled-ropes"
+      this.http.post<Rope>(
+        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/haulled-ropes/${this.userID}.json`,
+        hauledRope,
+        { params: { 'auth': this.authToken } }
+      ).subscribe();
+
+      // Remove the rope from the local array
+      this.ropes.splice(i, 1);
+
+      // Update the "live-ropes" endpoint
+      this.http.put<Rope[]>(
+        `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/live-ropes/${this.userID}.json`,
+        this.ropes,
+        { params: { 'auth': this.authToken } }
+      ).subscribe();
+
+      // Notify subscribers of the updated ropes list
+      this.ropes$.next(this.ropes.slice());
+      this.ropeUpdated$.next();
+    }
+  }
 }

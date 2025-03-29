@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { LogdataService } from '../../services/logdata.service';
 import { Rope } from '../../models/ropes.model';
 
@@ -10,6 +11,7 @@ import { Rope } from '../../models/ropes.model';
   styleUrls: ['./map-base.component.css']
 })
 export class MapBaseComponent implements AfterViewInit {
+  private ropesSubscription!: Subscription;
   
   followPosition: boolean = false;
   startPosition?: GeolocationPosition;
@@ -39,10 +41,10 @@ export class MapBaseComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.initMap();
     this.initGeolocation();
-    this.logdataService.ropes$.subscribe(ropes => {
+    this.ropesSubscription = this.logdataService.ropes$.subscribe((ropes) => {
       this.drawRopesOnMap(ropes);
-      console.log('ngAfterViewInit - Ropes: ', ropes);
     });
+    
   }
 
   private initMap() {
@@ -177,7 +179,7 @@ export class MapBaseComponent implements AfterViewInit {
                 if (haulRopeButton) {
                   haulRopeButton.addEventListener('click', () => {
                     console.log(`Hauling Rope: ${rope.id}`);
-                    this.haulRope(rope.id);
+                    this.haulRope(rope);
                   });
                 } else {
                   console.log('Cannot find Haul Rope Button!');
@@ -446,10 +448,9 @@ export class MapBaseComponent implements AfterViewInit {
     console.log('End Rope Button Pressed!');
     console.log(this.selectedCatchType);
     const colour = this.getColourForCatchType(this.selectedCatchType);
-    const live = true;
     const time = Date.now();
     // const tempID = length(this.ropes$) + '';
-    const limitedRope = new Rope(time, live,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour);
+    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour);
     this.logdataService.storeLocation(limitedRope);
 
     endRope.style.display = 'none'; // Hide end button
@@ -461,22 +462,23 @@ export class MapBaseComponent implements AfterViewInit {
     return catchType ? catchType.colour : '#000000'; // Return undefined if not found
   }
 
-  haulRope(ropeID: string) {
+  haulRope(rope: Rope) {
     console.log("Haul Rope Button Pressed");
     const rating = prompt("Please provide rating on the hauled rope:");
     
     if (rating !== null) {
-      this.logdataService.updateRope(ropeID, { live: false, rating: rating });
-      console.log(`Rope ${ropeID} updated successfully.`);
-      
-      this.logdataService.ropes$.subscribe(ropes => {
-        this.drawRopesOnMap(ropes);
-        console.log(ropes);
-      });
+      this.logdataService.updateRope(rope, rating);
+      console.log(`Rope ${rope} updated successfully.`);
 
     }
+}
 
-    
+ngOnDestroy(): void {
+  // Unsubscribe to avoid memory leaks
+  if (this.ropesSubscription) {
+    this.ropesSubscription.unsubscribe();
   }
+}
+
 
 }
