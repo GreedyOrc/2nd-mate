@@ -117,7 +117,8 @@ export class MapBaseComponent implements AfterViewInit {
     // Clear existing polylines
     this.ropesPolylines.forEach(polyline => polyline.setMap(null));
     this.ropesPolylines = [];
-
+    let infoWindow: google.maps.InfoWindow | null = null;
+    
     ropes.forEach(rope => {
       if (rope.startLocation && rope.endLocation) {
         const ropePath = [
@@ -150,7 +151,7 @@ export class MapBaseComponent implements AfterViewInit {
 
         const infoWindowDiv = document.createElement('div');
         this.customStyleInfoWindow(infoWindowDiv);
-        const infoWindow = new google.maps.InfoWindow
+        infoWindow = new google.maps.InfoWindow
         //set style for pop out window
         infoWindow.setOptions(infoWindowDiv);
 
@@ -180,6 +181,9 @@ export class MapBaseComponent implements AfterViewInit {
                   haulRopeButton.addEventListener('click', () => {
                     console.log(`Hauling Rope: ${rope.id}`);
                     this.haulRope(rope);
+                    if (infoWindow) {
+                      infoWindow.close();  // Close the InfoWindow when Haul Rope is pressed
+                    }
                   });
                 } else {
                   console.log('Cannot find Haul Rope Button!');
@@ -189,7 +193,9 @@ export class MapBaseComponent implements AfterViewInit {
 
         // Add click event listener to the marker instead of the polyline
         iconMarker.addListener("click", () => {
-          infoWindow.open(this.map, iconMarker);
+          if (infoWindow) {
+            infoWindow.open(this.map, iconMarker);
+          }
         });
 
         this.ropesPolylines.push(polyline);

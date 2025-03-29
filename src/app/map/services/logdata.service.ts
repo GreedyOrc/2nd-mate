@@ -138,7 +138,7 @@ getRopes(){
   }
 
   ///##### If you want to display old ropes - will need to do the same thing as we do for live ropes now. Need to buld an array of them. 
-  
+
   updateRope(rope: Rope, rating: string) {
     let i = this.ropes.map(f => f.dropTime).indexOf(rope.dropTime);
 
@@ -169,6 +169,7 @@ getRopes(){
       // Notify subscribers of the updated ropes list
       this.ropes$.next(this.ropes.slice());
       this.ropeUpdated$.next();
+      
     }
   }
 }
