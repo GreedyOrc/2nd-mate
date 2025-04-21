@@ -158,7 +158,7 @@ export class MapBaseComponent implements AfterViewInit {
         infoWindow.setContent(
                `
               <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details</h3>
-              <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
+              <p><strong>Created:</strong> ${new Date(rope.dropTime).toLocaleString()}</p>
               <p><strong>Catch Type:</strong> 
                 <span >${rope.catchtype}</span>
               </p>
@@ -263,10 +263,10 @@ export class MapBaseComponent implements AfterViewInit {
   private directionLine?: google.maps.Polyline;
 
   drawDirectionLine(position: GeolocationPosition) {
-    if (!position.coords.heading) return; // Skip if no heading data
+    if (!position.coords.heading) return; 
 
-    const distance = 0.1; // Adjust this value to extend the line (approx 100m)
-    const earthRadius = 6371; // Earth radius in km
+    const distance = 1000; 
+    const earthRadius = 6371; 
   
     const lat1 = position.coords.latitude * (Math.PI / 180);
     const lon1 = position.coords.longitude * (Math.PI / 180);
@@ -538,8 +538,6 @@ export class MapBaseComponent implements AfterViewInit {
 
 haulRope(rope: Rope) {
   console.log("Haul Rope Button Pressed");
-
-  
   const dropdownContainer = document.createElement('div');
   dropdownContainer.style.position = 'absolute';
   dropdownContainer.style.backgroundColor = 'white';
