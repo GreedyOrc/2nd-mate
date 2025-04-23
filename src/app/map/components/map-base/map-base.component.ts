@@ -158,7 +158,7 @@ export class MapBaseComponent implements AfterViewInit {
         infoWindow.setContent(
                `
               <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details</h3>
-              <p><strong>Created:</strong> ${new Date(rope.time).toLocaleString()}</p>
+              <p><strong>Created:</strong> ${new Date(rope.dropTime).toLocaleString()}</p>
               <p><strong>Catch Type:</strong> 
                 <span >${rope.catchtype}</span>
               </p>
@@ -224,6 +224,9 @@ export class MapBaseComponent implements AfterViewInit {
 
     this.marker.setPosition(pos);
 
+    //Can use this however thinking a large image would just be better
+    this.drawDirectionLine(position);
+
     const speedCell = document.getElementById('speedCell');
     const directionCell = document.getElementById('directionCell');
     const latCell = document.getElementById('latCell');
@@ -257,6 +260,55 @@ export class MapBaseComponent implements AfterViewInit {
 
   }
 
+  private directionLine?: google.maps.Polyline;
+
+  drawDirectionLine(position: GeolocationPosition) {
+    if (!position.coords.heading) return; 
+
+    const distance = 1000; 
+    const earthRadius = 6371; 
+  
+    const lat1 = position.coords.latitude * (Math.PI / 180);
+    const lon1 = position.coords.longitude * (Math.PI / 180);
+    const headingRad = position.coords.heading * (Math.PI / 180);
+  
+    // Compute new lat/lon
+    const lat2 = Math.asin(
+      Math.sin(lat1) * Math.cos(distance / earthRadius) +
+        Math.cos(lat1) * Math.sin(distance / earthRadius) * Math.cos(headingRad)
+    );
+    const lon2 =
+      lon1 +
+      Math.atan2(
+        Math.sin(headingRad) * Math.sin(distance / earthRadius) * Math.cos(lat1),
+        Math.cos(distance / earthRadius) - Math.sin(lat1) * Math.sin(lat2)
+      );
+  
+    const newLat = lat2 * (180 / Math.PI);
+    const newLon = lon2 * (180 / Math.PI);
+  
+    const path = [
+      { lat: position.coords.latitude, lng: position.coords.longitude },
+      { lat: newLat, lng: newLon },
+    ];
+  
+    // Remove existing line if any
+    if (this.directionLine) {
+      this.directionLine.setMap(null);
+    }
+  
+    // Create new polyline
+    this.directionLine = new google.maps.Polyline({
+      path,
+      geodesic: true,
+      strokeColor: '#FF0000',
+      strokeOpacity: 0.8,
+      strokeWeight: 2,
+      map: this.map,
+    });
+  }
+
+
  
   createCenterControl(map: google.maps.Map) {
     // Create the control div
@@ -285,6 +337,11 @@ export class MapBaseComponent implements AfterViewInit {
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlButtonDiv);
 
     return controlButtonDiv;
+  }
+
+  createFollowControl(map: google.maps.Map) {
+    //create the follow button in here
+    //Need to also create a function to listen when the map is manually moved to turn off auto follow and disable this button 
   }
 
   customStyleControlButton(centerControlButton: HTMLElement){
@@ -399,7 +456,7 @@ export class MapBaseComponent implements AfterViewInit {
     dropdownDiv.style.boxShadow = '0px 1px 4px rgba(0,0,0,0.3)';
 
     const select = document.createElement('select');
-    select.style.width = '150px';
+    select.style.width = '110px';
     select.style.padding = '5px';
 
     // Function to populate dropdown options
@@ -468,15 +525,64 @@ export class MapBaseComponent implements AfterViewInit {
     return catchType ? catchType.colour : '#000000'; // Return undefined if not found
   }
 
-  haulRope(rope: Rope) {
-    console.log("Haul Rope Button Pressed");
-    const rating = prompt("Please provide rating on the hauled rope:");
+//   haulRope(rope: Rope) {
+//     console.log("Haul Rope Button Pressed");
+//     const rating = prompt("Please provide rating on the hauled rope:");
     
-    if (rating !== null) {
-      this.logdataService.updateRope(rope, rating);
-      console.log(`Rope ${rope} updated successfully.`);
+//     if (rating !== null) {
+//       this.logdataService.updateRope(rope, rating);
+//       console.log(`Rope ${rope} updated successfully.`);
 
-    }
+//     }
+// }
+
+haulRope(rope: Rope) {
+  console.log("Haul Rope Button Pressed");
+  const dropdownContainer = document.createElement('div');
+  dropdownContainer.style.position = 'absolute';
+  dropdownContainer.style.backgroundColor = 'white';
+  dropdownContainer.style.border = '1px solid #ccc';
+  dropdownContainer.style.padding = '10px';
+  dropdownContainer.style.borderRadius = '5px';
+  dropdownContainer.style.boxShadow = '0 2px 6px rgba(0,0,0,0.3)';
+  dropdownContainer.style.zIndex = '1000';
+
+  // Create a dropdown select element
+  const select = document.createElement('select');
+  const options = ['Excellent', 'Good', 'Average', 'Poor']; // Example rating options
+  options.forEach(option => {
+      const opt = document.createElement('option');
+      opt.value = option;
+      opt.textContent = option;
+      select.appendChild(opt);
+  });
+
+  // Create a submit button
+  const submitButton = document.createElement('button');
+  submitButton.textContent = 'Submit';
+  submitButton.style.marginTop = '10px';
+
+  // Append the dropdown and button to the container
+  dropdownContainer.appendChild(select);
+  dropdownContainer.appendChild(submitButton);
+
+  // Append the container to the body
+  document.body.appendChild(dropdownContainer);
+
+  // Position the dropdown near the button (optional, adjust as needed)
+  dropdownContainer.style.top = '50%';
+  dropdownContainer.style.left = '50%';
+  dropdownContainer.style.transform = 'translate(-50%, -50%)';
+
+  // Handle the submit button click
+  submitButton.addEventListener('click', () => {
+      const rating = select.value;
+      this.logdataService.updateRope(rope, rating);
+      console.log(`Rope ${rope} updated successfully with rating: ${rating}`);
+
+      // Remove the dropdown container after submission
+      document.body.removeChild(dropdownContainer);
+  });
 }
 
 ngOnDestroy(): void {

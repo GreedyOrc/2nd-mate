@@ -16,7 +16,7 @@ import { RegisterComponent } from './auth/components/register/register.component
 import { DataMainComponent } from './data/components/data-main/data-main.component';
 import { MapBaseComponent } from './map/components/map-base/map-base.component';
 import { MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { MatCardModule} from '@angular/material/card';
 import { LoadingIconComponent } from './shared/components/loading-icon/loading-icon.component';
 import { FormsModule, ReactiveFormsModule  }   from '@angular/forms';
@@ -47,7 +47,7 @@ import { MapCardComponent } from './map/components/map-card/map-card.component';
   imports: [
     BrowserModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth()), 
+    provideAuth(() => getAuth()),
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,

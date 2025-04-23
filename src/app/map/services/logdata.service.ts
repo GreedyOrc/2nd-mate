@@ -114,19 +114,19 @@ getRopes(){
   //   console.log('ropes, ', this.ropes);
   // }
 
-  generateSortableNumber(typeOfCatch: string): number {
-    const timestamp = Date.now(); 
-    const hash = this.hashStringToNumber(typeOfCatch); 
-    return Number(`${timestamp}${hash}`);
-  }
+  // generateSortableNumber(typeOfCatch: string): number {
+  //   const timestamp = Date.now(); 
+  //   const hash = this.hashStringToNumber(typeOfCatch); 
+  //   return Number(`${timestamp}${hash}`);
+  // }
   
-  private hashStringToNumber(str: string): number {
-    let hash = 0;
-    for (let i = 0; i < str.length; i++) {
-      hash = (hash << 5) - hash + str.charCodeAt(i);
-    }
-    return Math.abs(hash) % 1000; 
-  }
+  // private hashStringToNumber(str: string): number {
+  //   let hash = 0;
+  //   for (let i = 0; i < str.length; i++) {
+  //     hash = (hash << 5) - hash + str.charCodeAt(i);
+  //   }
+  //   return Math.abs(hash) % 1000; 
+  // }
 
   getCatchTypes(): Observable<CatchType[]> {
     return this.http.get<{ [key: string]: CatchType }>(
