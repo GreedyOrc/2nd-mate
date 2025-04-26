@@ -23,7 +23,7 @@ export class MapBaseComponent implements AfterViewInit {
   catchTypes: { name: string; colour: string }[] = [];
   selectedCatchType: string = '';
   ropesPolylines: google.maps.Polyline[] = []; // Store polyline references
-  
+  ropeMarkers: google.maps.Marker[] = [];
 
   constructor(private logdataService: LogdataService) { }
 
@@ -115,8 +115,17 @@ export class MapBaseComponent implements AfterViewInit {
 
   private drawRopesOnMap(ropes: any[]) {
     // Clear existing polylines
-    this.ropesPolylines.forEach(polyline => polyline.setMap(null));
+    this.ropesPolylines.forEach(polyline => 
+      polyline.setMap(null)
+    );
     this.ropesPolylines = [];
+
+    // Clear existing markers
+    this.ropeMarkers.forEach(marker =>
+      marker.setMap(null)
+    );
+
+    this.ropeMarkers = [];
     let infoWindow: google.maps.InfoWindow | null = null;
     
     ropes.forEach(rope => {
@@ -129,7 +138,7 @@ export class MapBaseComponent implements AfterViewInit {
         const polyline = new google.maps.Polyline({
           path: ropePath,
           geodesic: true,
-          strokeColor: '#000000', // Black polyline
+          strokeColor: '#000000',
           strokeOpacity: 0.9,
           strokeWeight: 5,
           map: this.map,
@@ -148,6 +157,8 @@ export class MapBaseComponent implements AfterViewInit {
             strokeWeight: 2,
           },
         });
+
+        this.ropeMarkers.push(iconMarker);
 
         const infoWindowDiv = document.createElement('div');
         this.customStyleInfoWindow(infoWindowDiv);
