@@ -8,6 +8,7 @@ import { CatchType } from '../models/catchtype.model';
 
 
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -37,7 +38,7 @@ export class LogdataService {
   }
 
 
-getRopes(){
+  getRopes(){
       if (!this.userID) {
       this.ropes = [];
       this.ropes$.next(this.ropes.slice()); 
@@ -54,7 +55,7 @@ getRopes(){
         this.ropes$.next(this.ropes.slice());
       }    
     });
-}
+  }
 
 
  //Old code - 29/03/2025
@@ -172,4 +173,20 @@ getRopes(){
       
     }
   }
+
+  getDept(startPos: GeolocationPosition, endPos: GeolocationPosition){
+    console.log('position' , startPos, endPos);
+     this.http.get('https://api.opentopodata.org/v1/emod2018?locations=' + startPos.coords.latitude + ',' + startPos.coords.longitude).subscribe(response => {
+      if (response) {
+        console.log('Get depth response: ', response);
+        
+        
+      }    
+    })
+       
+    
+
+
+  }
+
 }

@@ -524,7 +524,10 @@ export class MapBaseComponent implements AfterViewInit {
     const colour = this.getColourForCatchType(this.selectedCatchType);
     const time = Date.now();
     // const tempID = length(this.ropes$) + '';
-    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour);
+
+    const depth = this.logdataService.getDept(this.startPosition!, this.currentPosition!)
+    
+    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour, 5);
     this.logdataService.storeLocation(limitedRope);
 
     endRope.style.display = 'none'; // Hide end button
