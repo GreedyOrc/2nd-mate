@@ -2,6 +2,7 @@ import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LogdataService } from '../../services/logdata.service';
 import { Rope } from '../../models/ropes.model';
+import { GeolocationService } from '../../services/geolocation.service';
 
 
 
@@ -10,7 +11,7 @@ import { Rope } from '../../models/ropes.model';
   templateUrl: './map-base.component.html',
   styleUrls: ['./map-base.component.css']
 })
-export class MapBaseComponent implements AfterViewInit {
+export  class  MapBaseComponent implements AfterViewInit {
   private ropesSubscription!: Subscription;
   
   followPosition: boolean = false;
@@ -25,10 +26,11 @@ export class MapBaseComponent implements AfterViewInit {
   ropesPolylines: google.maps.Polyline[] = []; // Store polyline references
   ropeMarkers: google.maps.Marker[] = [];
 
-  constructor(private logdataService: LogdataService) { }
+  constructor(private logdataService: LogdataService, private geolocationService: GeolocationService) { }
 
 
   @ViewChild('mapContainer', { static: false }) mapContainer!: ElementRef;
+  
   //Attempt at drop down menu
   ngOnInit() {    
     this.logdataService.catchtypes$.subscribe((types) => {
@@ -126,7 +128,7 @@ export class MapBaseComponent implements AfterViewInit {
     );
 
     this.ropeMarkers = [];
-    let infoWindow: google.maps.InfoWindow | null = null;
+    
     
     ropes.forEach(rope => {
       if (rope.startLocation && rope.endLocation) {
@@ -159,19 +161,31 @@ export class MapBaseComponent implements AfterViewInit {
         });
 
         this.ropeMarkers.push(iconMarker);
+        let infoWindow: google.maps.InfoWindow | null = null;
 
         const infoWindowDiv = document.createElement('div');
         this.customStyleInfoWindow(infoWindowDiv);
         infoWindow = new google.maps.InfoWindow
         //set style for pop out window
         infoWindow.setOptions(infoWindowDiv);
+        const dropDate = new Date(rope.dropTime);
+        const today = new Date();
+        dropDate.setHours(0, 0, 0, 0);
+        today.setHours(0, 0, 0, 0);
+        const differenceInMilliseconds = today.getTime() - dropDate.getTime();
+        const millisecondsPerDay = 1000 * 60 * 60 * 24;
+        const differenceInDays = Math.floor(differenceInMilliseconds / millisecondsPerDay);
+
 
         infoWindow.setContent(
                `
-              <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details</h3>
+              <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details - ${differenceInDays} days old  </h3>
               <p><strong>Created:</strong> ${new Date(rope.dropTime).toLocaleString()}</p>
               <p><strong>Catch Type:</strong> 
                 <span >${rope.catchtype}</span>
+              </p>
+              <p><strong>Rope depth:</strong> 
+                <span >${rope.depth}</span>
               </p>
               <p><strong>Start:</strong> 
                 <span >(${rope.startLocation.coords.latitude.toFixed(5)}, ${rope.startLocation.coords.longitude.toFixed(5)})</span>
@@ -518,16 +532,17 @@ export class MapBaseComponent implements AfterViewInit {
     endRope.style.display = 'block'; // Show end button
   }
 
-  endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
+  async endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
     console.log('End Rope Button Pressed!');
     console.log(this.selectedCatchType);
     const colour = this.getColourForCatchType(this.selectedCatchType);
     const time = Date.now();
     // const tempID = length(this.ropes$) + '';
 
-    const depth = this.logdataService.getDept(this.startPosition!, this.currentPosition!)
-    
-    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour, 5);
+    const depth = await this.geolocationService.getDept(this.startPosition!, this.currentPosition!);
+    console.log('depth1', depth);
+
+    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour, depth);
     this.logdataService.storeLocation(limitedRope);
 
     endRope.style.display = 'none'; // Hide end button

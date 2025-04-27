@@ -174,19 +174,6 @@ export class LogdataService {
     }
   }
 
-  getDept(startPos: GeolocationPosition, endPos: GeolocationPosition){
-    console.log('position' , startPos, endPos);
-     this.http.get('https://api.opentopodata.org/v1/emod2018?locations=' + startPos.coords.latitude + ',' + startPos.coords.longitude).subscribe(response => {
-      if (response) {
-        console.log('Get depth response: ', response);
-        
-        
-      }    
-    })
-       
-    
-
-
-  }
+  
 
 }
