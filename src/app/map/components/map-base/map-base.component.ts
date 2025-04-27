@@ -175,12 +175,14 @@ export  class  MapBaseComponent implements AfterViewInit {
         const differenceInMilliseconds = today.getTime() - dropDate.getTime();
         const millisecondsPerDay = 1000 * 60 * 60 * 24;
         const differenceInDays = Math.floor(differenceInMilliseconds / millisecondsPerDay);
-
+        // console.log('Drop Date Outside Function ', rope.dropTime)
+        const noOfTidelCycles = this.calculateTidalCycles(new Date(rope.dropTime));
 
         infoWindow.setContent(
                `
               <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details - ${differenceInDays} days old  </h3>
               <p><strong>Created:</strong> ${new Date(rope.dropTime).toLocaleString()}</p>
+              <p><strong>No of Tides:</strong> ${noOfTidelCycles}</p>
               <p><strong>Catch Type:</strong> 
                 <span >${rope.catchtype}</span>
               </p>
@@ -614,11 +616,21 @@ haulRope(rope: Rope) {
   });
 }
 
-ngOnDestroy(): void {
-  // Unsubscribe to avoid memory leaks
-  if (this.ropesSubscription) {
-    this.ropesSubscription.unsubscribe();
+
+//calculates the number of tidal cycles since the input date, must calculate in miliseconds ~ tidal cycle is around 12 hours 25 mins 
+calculateTidalCycles(dropDate: Date): number {
+  // console.log('Drop Date', dropDate);
+  const tidalCycleDurationMs = (12 * 60 + 25) * 60 * 1000; // Duration of one tidal cycle in milliseconds
+  const now = new Date(); // Get the current date and time
+  const timeDifferenceMs = now.getTime() - dropDate.getTime(); // Calculate the difference in milliseconds
+  // console.log('time difference: ', timeDifferenceMs);
+  // Ensure the difference is not negative (shouldn't happen if dropDate is in the past, but good practice)
+  if (timeDifferenceMs < 0) {
+      return 0;
   }
+
+  const numberOfCycles = timeDifferenceMs / tidalCycleDurationMs;
+  return Math.round(numberOfCycles);
 }
 
 
