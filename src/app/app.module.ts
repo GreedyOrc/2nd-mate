@@ -28,8 +28,12 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { PositionInfoComponent } from './map/components/position-info/position-info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapCardComponent } from './map/components/map-card/map-card.component';
-
-
+import { AboutTextComponent } from './about/components/about-text/about-text.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatTableModule } from '@angular/material/table';
+import { DataTableComponent } from './data/components/data-table/data-table.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,10 @@ import { MapCardComponent } from './map/components/map-card/map-card.component';
     MapBaseComponent,
     LoadingIconComponent,
     PositionInfoComponent,
-    MapCardComponent
+    MapCardComponent,
+    AboutTextComponent,
+    DataTableComponent, 
+    
   ],
   imports: [
     BrowserModule,
@@ -62,7 +69,12 @@ import { MapCardComponent } from './map/components/map-card/map-card.component';
     ReactiveFormsModule,
     MatInputModule,
     GoogleMapsModule,
-    HttpClientModule  
+    HttpClientModule, 
+    MatChipsModule,
+    MatTableModule, 
+    MatSortModule, 
+    MatPaginatorModule
+  
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],

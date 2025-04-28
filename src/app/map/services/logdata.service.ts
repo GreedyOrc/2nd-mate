@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { BehaviorSubject, map, Observable, Subject } from 'rxjs';
+import { BehaviorSubject, forkJoin, map, Observable, Subject } from 'rxjs';
 import { Rope } from '../models/ropes.model';
 import { CatchType } from '../models/catchtype.model';
 
@@ -23,6 +23,7 @@ export class LogdataService {
   authToken: any;
 
   constructor(private http: HttpClient, private auth: AngularFireAuth) {
+
     this.auth.authState.subscribe(user => {
       this.userID = user ? user.uid : null;
       if (this.userID) {
@@ -35,6 +36,7 @@ export class LogdataService {
       }
 
     })
+
   }
 
 
@@ -174,6 +176,27 @@ export class LogdataService {
     }
   }
 
-  
+  getAllRopes(): Observable<Rope[]> {
+    let liveropes = this.http.get<{ [key: string]: Rope }>(
+      `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/live-ropes/${this.userID}.json`
+      ,
+      {params: {'auth': this.authToken}}).pipe(
+      map((response) => response ? Object.values(response) : [])
+      
+    );
+    let hauledropes = this.http.get<{ [key: string]: Rope }>(
+      `https://nd-mate-1ad17-default-rtdb.europe-west1.firebasedatabase.app/haulled-ropes/${this.userID}.json`
+      ,
+      {params: {'auth': this.authToken}}).pipe(
+      map((response) => response ? Object.values(response) : [])
+      
+    );
 
+    return forkJoin([liveropes, hauledropes]).pipe(
+      map(([liveropes, hauledropes]) => [...liveropes, ...hauledropes]))
+    
+  }
+
+  
+  
 }

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-data-main',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-main.component.css']
 })
 export class DataMainComponent {
+  
+  constructor() { }
+
 
 }
