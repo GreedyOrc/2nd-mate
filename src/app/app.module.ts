@@ -25,11 +25,9 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { PositionInfoComponent } from './map/components/position-info/position-info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MapCardComponent } from './map/components/map-card/map-card.component';
 import { AboutTextComponent } from './about/components/about-text/about-text.component';
-import { MatChipsModule } from '@angular/material/chips';
 import { MatTableModule } from '@angular/material/table';
 import { DataTableComponent } from './data/components/data-table/data-table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -45,7 +43,6 @@ import { MatSortModule } from '@angular/material/sort';
     DataMainComponent,
     MapBaseComponent,
     LoadingIconComponent,
-    PositionInfoComponent,
     MapCardComponent,
     AboutTextComponent,
     DataTableComponent, 
@@ -70,11 +67,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     GoogleMapsModule,
     HttpClientModule, 
-    MatChipsModule,
     MatTableModule, 
     MatSortModule, 
     MatPaginatorModule
-  
   ],
   providers: [{ provide: FIREBASE_OPTIONS, useValue: environment.firebase }
   ],

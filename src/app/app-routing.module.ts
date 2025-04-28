@@ -8,12 +8,12 @@ import { AuthGuardService } from './auth/services/auth-guard.service';
 import { MapCardComponent } from './map/components/map-card/map-card.component';
 
 const routes: Routes = [
-   {path: 'about', component: AboutMainComponent}, 
+    {path: 'about', component: AboutMainComponent}, 
     {path: 'map', component: MapCardComponent, canActivate: [AuthGuardService]},
     {path: 'login', component: LoginComponent},
     {path: 'register', component:RegisterComponent},
     {path: 'data', component:DataMainComponent, canActivate: [AuthGuardService]},
-    {path: '', component: AboutMainComponent}
+    {path: '', component: LoginComponent}
 ];
 
 @NgModule({

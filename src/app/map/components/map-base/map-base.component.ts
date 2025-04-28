@@ -168,6 +168,7 @@ export  class  MapBaseComponent implements AfterViewInit {
         infoWindow = new google.maps.InfoWindow
         //set style for pop out window
         infoWindow.setOptions(infoWindowDiv);
+
         const dropDate = new Date(rope.dropTime);
         const today = new Date();
         dropDate.setHours(0, 0, 0, 0);
@@ -176,6 +177,7 @@ export  class  MapBaseComponent implements AfterViewInit {
         const millisecondsPerDay = 1000 * 60 * 60 * 24;
         const differenceInDays = Math.floor(differenceInMilliseconds / millisecondsPerDay);
         // console.log('Drop Date Outside Function ', rope.dropTime)
+
         const noOfTidelCycles = this.calculateTidalCycles(new Date(rope.dropTime));
 
         infoWindow.setContent(
@@ -366,10 +368,6 @@ export  class  MapBaseComponent implements AfterViewInit {
     return controlButtonDiv;
   }
 
-  createFollowControl(map: google.maps.Map) {
-    //create the follow button in here
-    //Need to also create a function to listen when the map is manually moved to turn off auto follow and disable this button 
-  }
 
   customStyleControlButton(centerControlButton: HTMLElement){
     centerControlButton.style.width = '40px';
@@ -502,10 +500,8 @@ export  class  MapBaseComponent implements AfterViewInit {
       
     };
 
-    // Initial population (if data is already available)
     updateDropdown();
 
-    // Listen for data updates (wait for Firebase data)
     this.logdataService.getCatchTypes().subscribe((types) => {
       this.catchTypes = types;
       updateDropdown(); 
@@ -556,16 +552,7 @@ export  class  MapBaseComponent implements AfterViewInit {
     return catchType ? catchType.colour : '#000000'; // Return undefined if not found
   }
 
-//   haulRope(rope: Rope) {
-//     console.log("Haul Rope Button Pressed");
-//     const rating = prompt("Please provide rating on the hauled rope:");
-    
-//     if (rating !== null) {
-//       this.logdataService.updateRope(rope, rating);
-//       console.log(`Rope ${rope} updated successfully.`);
 
-//     }
-// }
 
 haulRope(rope: Rope) {
   console.log("Haul Rope Button Pressed");
@@ -617,14 +604,11 @@ haulRope(rope: Rope) {
 }
 
 
-//calculates the number of tidal cycles since the input date, must calculate in miliseconds ~ tidal cycle is around 12 hours 25 mins 
+// calculates the number of tidal cycles since the input date, must calculate in miliseconds ~ tidal cycle is around 12 hours 25 mins 
 calculateTidalCycles(dropDate: Date): number {
-  // console.log('Drop Date', dropDate);
-  const tidalCycleDurationMs = (12 * 60 + 25) * 60 * 1000; // Duration of one tidal cycle in milliseconds
-  const now = new Date(); // Get the current date and time
-  const timeDifferenceMs = now.getTime() - dropDate.getTime(); // Calculate the difference in milliseconds
-  // console.log('time difference: ', timeDifferenceMs);
-  // Ensure the difference is not negative (shouldn't happen if dropDate is in the past, but good practice)
+  const tidalCycleDurationMs = (12 * 60 + 25) * 60 * 1000; 
+  const now = new Date(); 
+  const timeDifferenceMs = now.getTime() - dropDate.getTime(); 
   if (timeDifferenceMs < 0) {
       return 0;
   }
