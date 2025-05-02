@@ -1,0 +1,1701 @@
+DataSource,Area,DatasetType,Period,Season,VariableName,VariableUnit,VariableValue
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,7.5
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.6
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Su,sea surface temperature,°C,13
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Au,sea surface temperature,°C,11.2
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,7.3
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.9
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.7
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Au,sea surface temperature,°C,11
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,8.2
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,9.4
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Su,sea surface temperature,°C,13.2
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Au,sea surface temperature,°C,11.8
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,8
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,9.1
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.7
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Au,sea surface temperature,°C,11.5
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,8.3
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,9.6
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.8
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Au,sea surface temperature,°C,11.3
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,7.8
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.6
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.2
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Au,sea surface temperature,°C,11.2
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,7.4
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.6
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.1
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Au,sea surface temperature,°C,10.7
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,7.8
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.8
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Su,sea surface temperature,°C,11.9
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Au,sea surface temperature,°C,10.2
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,6.2
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,9.1
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.8
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Au,sea surface temperature,°C,10.1
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,6.3
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.3
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Su,sea surface temperature,°C,12.6
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Au,sea surface temperature,°C,10.6
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Wi,sea surface temperature,°C,6.2
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Sp,sea surface temperature,°C,8.5
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Su,sea surface temperature,°C,13.2
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Au,sea surface temperature,°C,10.1
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.6
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Su,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Au,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.9
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Su,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.2
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.2
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.4
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.3
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.7
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.1
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.1
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.8
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.4
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.3
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.6
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.3
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Su,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Au,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.4
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.6
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.2
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.8
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.9
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.9
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.3
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,6.2
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.2
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.3
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,6.4
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.6
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.7
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.7
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,6.3
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.5
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.2
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.2
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.2
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.7
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.5
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.8
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.4
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.1
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.2
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.5
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.3
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.9
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.3
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Su,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Au,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Su,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Au,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Wi,sea surface temperature,°C,7.7
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Wi,sea surface temperature,°C,6.5
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Su,sea surface temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Au,sea surface temperature,°C,-99
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,7.6
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.1
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,12.3
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,11.5
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,7.5
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.7
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,11.4
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,8.5
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.8
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.4
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,11.6
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,8.2
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.5
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,11.5
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,8.5
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.8
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,10.4
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,11.2
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,7.8
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.3
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.4
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,11.3
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,7.4
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.3
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.6
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,10.7
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,7.7
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,8.1
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,10.3
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,10.1
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,6.4
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,7.5
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.2
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,10.2
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,6.3
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,7.5
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.4
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,10.7
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Wi,sea bottom temperature,°C,6.3
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Sp,sea bottom temperature,°C,7.1
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Su,sea bottom temperature,°C,11.4
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Au,sea bottom temperature,°C,10.3
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,11.5
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,8.5
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8.9
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,11.6
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,11.5
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,8.3
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8.6
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,11
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,11.5
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,8.5
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8.8
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,10.5
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,11.3
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,7.5
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8.3
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,11.8
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,10.8
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,7.8
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,8.1
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,10.4
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,10.2
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,6.4
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,7.4
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,11.4
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,10.4
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,6.5
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,7.6
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,11.5
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,10.8
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Wi,sea bottom temperature,°C,6.5
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Sp,sea bottom temperature,°C,7.3
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Su,sea bottom temperature,°C,11.4
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Au,sea bottom temperature,°C,10.3
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,8.5
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,8.7
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,7.9
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,8.6
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,11.7
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,11.1
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,10.6
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,10.5
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,6.4
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,11.8
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,6.4
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Wi,sea bottom temperature,°C,7.8
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Wi,sea bottom temperature,°C,6.7
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Wi,sea surface salinity,,33.75
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Sp,sea surface salinity,,33.81
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Su,sea surface salinity,,33.84
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Au,sea surface salinity,,33.79
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Wi,sea surface salinity,,33.13
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Sp,sea surface salinity,,32.97
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Su,sea surface salinity,,33.32
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Au,sea surface salinity,,33.35
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.65
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.46
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Su,sea surface salinity,,34.55
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Au,sea surface salinity,,34.6
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.48
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.43
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Su,sea surface salinity,,34.54
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Au,sea surface salinity,,34.47
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.85
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.97
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Su,sea surface salinity,,34.87
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Au,sea surface salinity,,34.92
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.56
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.64
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Su,sea surface salinity,,34.74
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Au,sea surface salinity,,34.74
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.83
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.86
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Su,sea surface salinity,,34.88
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Au,sea surface salinity,,34.89
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Wi,sea surface salinity,,35.23
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Sp,sea surface salinity,,35.28
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Su,sea surface salinity,,35.21
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Au,sea surface salinity,,35.22
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.47
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.39
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Su,sea surface salinity,,34.79
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Au,sea surface salinity,,34.75
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.52
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.45
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Su,sea surface salinity,,34.66
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Au,sea surface salinity,,34.71
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Wi,sea surface salinity,,34.2
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Sp,sea surface salinity,,34.02
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Su,sea surface salinity,,34.28
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Au,sea surface salinity,,34.29
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Wi,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Sp,sea surface salinity,,33.93
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Su,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Au,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Wi,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Sp,sea surface salinity,,32.97
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Su,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Au,sea surface salinity,,33.38
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.69
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Sp,sea surface salinity,,34.42
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Su,sea surface salinity,,34.47
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Au,sea surface salinity,,34.58
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.47
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Sp,sea surface salinity,,34.44
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Su,sea surface salinity,,34.47
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Au,sea surface salinity,,34.51
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.87
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Sp,sea surface salinity,,35.01
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Su,sea surface salinity,,34.8
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Au,sea surface salinity,,34.9
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Wi,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Sp,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Su,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Au,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.83
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Sp,sea surface salinity,,34.85
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Su,sea surface salinity,,34.88
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Au,sea surface salinity,,34.88
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Wi,sea surface salinity,,35.24
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Sp,sea surface salinity,,35.28
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Su,sea surface salinity,,35.22
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Au,sea surface salinity,,35.23
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.5
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Sp,sea surface salinity,,34.39
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Su,sea surface salinity,,34.77
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Au,sea surface salinity,,34.76
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.52
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Sp,sea surface salinity,,34.4
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Su,sea surface salinity,,34.62
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Au,sea surface salinity,,34.68
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Wi,sea surface salinity,,34.21
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Sp,sea surface salinity,,34.02
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Su,sea surface salinity,,34.32
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Au,sea surface salinity,,34.37
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Wi,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Wi,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Wi,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.54
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Au,sea surface salinity,,34.43
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.82
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Wi,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.93
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Sp,sea surface salinity,,34.89
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Su,sea surface salinity,,34.89
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Au,sea surface salinity,,34.87
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Wi,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Su,sea surface salinity,,35.23
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Au,sea surface salinity,,35.23
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Wi,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.44
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Su,sea surface salinity,,34.64
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.24
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Sp,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Su,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Au,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Wi,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Sp,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Su,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Au,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Wi,sea surface salinity,,34.73
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Wi,sea surface salinity,,34.66
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Wi,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Sp,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Su,sea surface salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Au,sea surface salinity,,-99
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Wi,sea bottom salinity,,33.88
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Sp,sea bottom salinity,,33.91
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Su,sea bottom salinity,,33.92
+ODAT,01. SOLWAY                     ,Dataset Average,1971-2016,Au,sea bottom salinity,,33.88
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Wi,sea bottom salinity,,33.71
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Sp,sea bottom salinity,,33.63
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Su,sea bottom salinity,,33.68
+ODAT,02. CLYDE                      ,Dataset Average,1971-2016,Au,sea bottom salinity,,33.73
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.91
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.84
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.85
+ODAT,03. ARGYLL                     ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.84
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.65
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.68
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.76
+ODAT,04. WEST HIGHLANDS             ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.7
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Wi,sea bottom salinity,,35.02
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Sp,sea bottom salinity,,35.2
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Su,sea bottom salinity,,35.13
+ODAT,05. OUTER HEBRIDES             ,Dataset Average,1971-2016,Au,sea bottom salinity,,35.04
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.75
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.73
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.83
+ODAT,06. NORTH COAST                ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.83
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.87
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.91
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.94
+ODAT,07. ORKNEY ISLANDS             ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.91
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Wi,sea bottom salinity,,35.24
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Sp,sea bottom salinity,,35.28
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Su,sea bottom salinity,,35.25
+ODAT,08. SHETLAND ISLES             ,Dataset Average,1971-2016,Au,sea bottom salinity,,35.24
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.71
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.77
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.86
+ODAT,09. MORAY FIRTH                ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.83
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.57
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.56
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.74
+ODAT,10. NORTH EAST                 ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.77
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Wi,sea bottom salinity,,34.41
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Sp,sea bottom salinity,,34.33
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Su,sea bottom salinity,,34.47
+ODAT,11. FORTH AND TAY              ,Dataset Average,1971-2016,Au,sea bottom salinity,,34.49
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Wi,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.02
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Su,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Climatological Average,1981-2010,Au,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Wi,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Sp,sea bottom salinity,,33.64
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Su,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Climatological Average,1981-2010,Au,sea bottom salinity,,33.71
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Wi,sea bottom salinity,,34.97
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.81
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Su,sea bottom salinity,,34.88
+ODAT,03. ARGYLL                     ,Climatological Average,1981-2010,Au,sea bottom salinity,,34.84
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Wi,sea bottom salinity,,34.67
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.68
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Su,sea bottom salinity,,34.74
+ODAT,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Au,sea bottom salinity,,34.71
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Wi,sea bottom salinity,,35.01
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Sp,sea bottom salinity,,35.24
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Su,sea bottom salinity,,35.13
+ODAT,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Au,sea bottom salinity,,35.01
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Wi,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Sp,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Su,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Climatological Average,1981-2010,Au,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Wi,sea bottom salinity,,34.87
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.9
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Su,sea bottom salinity,,34.94
+ODAT,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Au,sea bottom salinity,,34.92
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Wi,sea bottom salinity,,35.25
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Sp,sea bottom salinity,,35.29
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Su,sea bottom salinity,,35.26
+ODAT,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Au,sea bottom salinity,,35.25
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Wi,sea bottom salinity,,34.72
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.72
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Su,sea bottom salinity,,34.85
+ODAT,09. MORAY FIRTH                ,Climatological Average,1981-2010,Au,sea bottom salinity,,34.86
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Wi,sea bottom salinity,,34.55
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.54
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Su,sea bottom salinity,,34.71
+ODAT,10. NORTH EAST                 ,Climatological Average,1981-2010,Au,sea bottom salinity,,34.75
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Wi,sea bottom salinity,,34.42
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Sp,sea bottom salinity,,34.28
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Su,sea bottom salinity,,34.49
+ODAT,11. FORTH AND TAY              ,Climatological Average,1981-2010,Au,sea bottom salinity,,34.53
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.73
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.97
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.98
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Sp,sea bottom salinity,,34.95
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Su,sea bottom salinity,,34.95
+ODAT,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Au,sea bottom salinity,,34.91
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Su,sea bottom salinity,,35.26
+ODAT,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Au,sea bottom salinity,,35.25
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.5
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Su,sea bottom salinity,,34.73
+ODAT,10. NORTH EAST                 ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.43
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Wi,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Sp,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Su,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2015,Au,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,01. SOLWAY                     ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,02. CLYDE                      ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,03. ARGYLL                     ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,04. WEST HIGHLANDS             ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,05. OUTER HEBRIDES             ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,06. NORTH COAST                ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Wi,sea bottom salinity,,34.76
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,07. ORKNEY ISLANDS             ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,08. SHETLAND ISLES             ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Wi,sea bottom salinity,,34.65
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,09. MORAY FIRTH                ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,10. NORTH EAST                 ,Data for Year,2016,Au,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Wi,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Sp,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Su,sea bottom salinity,,-99
+ODAT,11. FORTH AND TAY              ,Data for Year,2016,Au,sea bottom salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,7.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13.1
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Au,sea surface temperature,°C,10.5
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,6.4
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.4
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Au,sea surface temperature,°C,9.6
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,6.2
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.3
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Su,sea surface temperature,°C,12.7
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Au,sea surface temperature,°C,9
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,6.5
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,8.7
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Su,sea surface temperature,°C,12.9
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Au,sea surface temperature,°C,10.5
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,7.7
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.7
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.2
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Au,sea surface temperature,°C,10.6
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,6.5
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.6
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.1
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Au,sea surface temperature,°C,9.6
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,6.3
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.4
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Su,sea surface temperature,°C,12.8
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Au,sea surface temperature,°C,9
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,6.5
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,8.7
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Au,sea surface temperature,°C,10.5
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.5
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.1
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.4
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.3
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.3
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,9.6
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.2
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.3
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.7
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Au,sea surface temperature,°C,8.9
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.4
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,8.7
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.9
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Su,sea surface temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Au,sea surface temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Su,sea surface temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Au,sea surface temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Su,sea surface temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Au,sea surface temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Wi,sea surface temperature,°C,7.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Sp,sea surface temperature,°C,10
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Su,sea surface temperature,°C,13.1
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Au,sea surface temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Wi,sea surface temperature,°C,6.4
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Sp,sea surface temperature,°C,9.1
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Su,sea surface temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Au,sea surface temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Wi,sea surface temperature,°C,6.3
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Sp,sea surface temperature,°C,9.6
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Su,sea surface temperature,°C,12.7
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Au,sea surface temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Wi,sea surface temperature,°C,6.6
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Sp,sea surface temperature,°C,8.6
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Su,sea surface temperature,°C,12.8
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Au,sea surface temperature,°C,10.8
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Wi,sea bottom temperature,°C,8.1
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Sp,sea bottom temperature,°C,9
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Su,sea bottom temperature,°C,12.5
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Au,sea bottom temperature,°C,11.2
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Wi,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Sp,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Su,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Au,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Wi,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Sp,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Su,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Au,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Wi,sea bottom temperature,°C,6.5
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Sp,sea bottom temperature,°C,8.2
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Su,sea bottom temperature,°C,12.4
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Au,sea bottom temperature,°C,10.7
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Wi,sea bottom temperature,°C,8.2
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Sp,sea bottom temperature,°C,9.1
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Su,sea bottom temperature,°C,12.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Au,sea bottom temperature,°C,11.2
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Wi,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Sp,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Su,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Au,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Wi,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Sp,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Su,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Au,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Wi,sea bottom temperature,°C,6.6
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Sp,sea bottom temperature,°C,8.2
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Su,sea bottom temperature,°C,12.6
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Au,sea bottom temperature,°C,10.8
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,8
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,8.9
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,12.4
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,11.1
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Wi,sea bottom temperature,°C,6.5
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Sp,sea bottom temperature,°C,8.2
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Su,sea bottom temperature,°C,12.4
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Au,sea bottom temperature,°C,10.8
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Wi,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Sp,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Su,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Au,sea bottom temperature,°C,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Wi,sea bottom temperature,°C,8.1
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Sp,sea bottom temperature,°C,8.9
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Su,sea bottom temperature,°C,12.5
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Wi,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Sp,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Su,sea bottom temperature,°C,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Au,sea bottom temperature,°C,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Wi,sea bottom temperature,°C,6.9
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Sp,sea bottom temperature,°C,8.3
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Su,sea bottom temperature,°C,12.2
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Au,sea bottom temperature,°C,10.9
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Wi,sea surface salinity,,33.07
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Sp,sea surface salinity,,33.61
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Su,sea surface salinity,,33.68
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Au,sea surface salinity,,32.92
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Wi,sea surface salinity,,34.3
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Sp,sea surface salinity,,34.68
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Su,sea surface salinity,,34.74
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Au,sea surface salinity,,34.53
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Wi,sea surface salinity,,34.35
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Sp,sea surface salinity,,34.99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Su,sea surface salinity,,35.06
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Au,sea surface salinity,,34.62
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Wi,sea surface salinity,,34.34
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Sp,sea surface salinity,,34.34
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Su,sea surface salinity,,34.55
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Au,sea surface salinity,,34.52
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Wi,sea surface salinity,,33.37
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Sp,sea surface salinity,,33.9
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Su,sea surface salinity,,33.92
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Au,sea surface salinity,,33.33
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Wi,sea surface salinity,,34.28
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Sp,sea surface salinity,,34.72
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Su,sea surface salinity,,34.8
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Au,sea surface salinity,,34.57
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Wi,sea surface salinity,,34.41
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Sp,sea surface salinity,,35.08
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Su,sea surface salinity,,35.09
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Au,sea surface salinity,,34.68
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Wi,sea surface salinity,,34.33
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Sp,sea surface salinity,,34.37
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Su,sea surface salinity,,34.61
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Au,sea surface salinity,,34.5
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Wi,sea surface salinity,,32.96
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Sp,sea surface salinity,,33.49
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Su,sea surface salinity,,33.57
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Au,sea surface salinity,,32.78
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.29
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Sp,sea surface salinity,,34.65
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Su,sea surface salinity,,34.71
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Au,sea surface salinity,,34.46
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.24
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Sp,sea surface salinity,,34.97
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Su,sea surface salinity,,35.05
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Au,sea surface salinity,,34.53
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Wi,sea surface salinity,,34.31
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Sp,sea surface salinity,,34.34
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Su,sea surface salinity,,34.52
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Au,sea surface salinity,,34.52
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Wi,sea surface salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Sp,sea surface salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Su,sea surface salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Au,sea surface salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Wi,sea surface salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Sp,sea surface salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Su,sea surface salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Au,sea surface salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Wi,sea surface salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Sp,sea surface salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Su,sea surface salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Au,sea surface salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Wi,sea surface salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Sp,sea surface salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Su,sea surface salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Au,sea surface salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Wi,sea surface salinity,,32.19
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Sp,sea surface salinity,,32.72
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Su,sea surface salinity,,32.43
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Au,sea surface salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Wi,sea surface salinity,,34.46
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Sp,sea surface salinity,,34.56
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Su,sea surface salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Au,sea surface salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Wi,sea surface salinity,,33.91
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Sp,sea surface salinity,,34.87
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Su,sea surface salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Au,sea surface salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Wi,sea surface salinity,,34.16
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Sp,sea surface salinity,,34.2
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Su,sea surface salinity,,34.38
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Au,sea surface salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Wi,sea bottom salinity,,34.15
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Sp,sea bottom salinity,,34.35
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Su,sea bottom salinity,,34.43
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Dataset Average,1997-2016,Au,sea bottom salinity,,34.16
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Wi,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Sp,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Su,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Au,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Wi,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Sp,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Su,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Au,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Wi,sea bottom salinity,,34.41
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Sp,sea bottom salinity,,34.44
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Su,sea bottom salinity,,34.63
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Dataset Average,1997-2016,Au,sea bottom salinity,,34.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Wi,sea bottom salinity,,34.22
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Sp,sea bottom salinity,,34.43
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Su,sea bottom salinity,,34.48
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Climatological Average,2000-2010,Au,sea bottom salinity,,34.21
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Wi,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Sp,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Su,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Au,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Wi,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Sp,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Su,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Au,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Wi,sea bottom salinity,,34.4
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Sp,sea bottom salinity,,34.47
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Su,sea bottom salinity,,34.67
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Climatological Average,2000-2010,Au,sea bottom salinity,,34.6
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.11
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Sp,sea bottom salinity,,34.3
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Su,sea bottom salinity,,34.4
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Decadal Average,2006-2015,Au,sea bottom salinity,,34.12
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Wi,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Sp,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Su,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Au,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Wi,sea bottom salinity,,34.39
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Sp,sea bottom salinity,,34.45
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Su,sea bottom salinity,,34.6
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Decadal Average,2006-2015,Au,sea bottom salinity,,34.58
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Wi,sea bottom salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Sp,sea bottom salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Su,sea bottom salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2015,Au,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Wi,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Sp,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Su,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Au,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Wi,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Sp,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Su,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Au,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Wi,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Sp,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Su,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2015,Au,sea bottom salinity,,-99
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Wi,sea bottom salinity,,33.79
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Sp,sea bottom salinity,,34.12
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Su,sea bottom salinity,,34.11
+SCOBS,04. (WEST HIGHLANDS) LOCHEWE   ,Data for Year,2016,Au,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Wi,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Sp,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Su,sea bottom salinity,,-99
+SCOBS,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Au,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Wi,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Sp,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Su,sea bottom salinity,,-99
+SCOBS,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Au,sea bottom salinity,,-99
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Wi,sea bottom salinity,,34.34
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Sp,sea bottom salinity,,34.33
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Su,sea bottom salinity,,34.48
+SCOBS,10. (NORTH EAST) STONEHAVEN    ,Data for Year,2016,Au,sea bottom salinity,,-99
+MINI,02. (CLYDE) MILLPORT           ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,7.7
+MINI,02. (CLYDE) MILLPORT           ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,10.3
+MINI,02. (CLYDE) MILLPORT           ,Dataset Average,1997-2016,Su,sea surface temperature,°C,14.2
+MINI,02. (CLYDE) MILLPORT           ,Dataset Average,1997-2016,Au,sea surface temperature,°C,11
+MINI,03. (ARGYLL) TIREE             ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,8.1
+MINI,03. (ARGYLL) TIREE             ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.6
+MINI,03. (ARGYLL) TIREE             ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13.4
+MINI,03. (ARGYLL) TIREE             ,Dataset Average,1997-2016,Au,sea surface temperature,°C,11.8
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,7.7
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,10.2
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13.9
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Dataset Average,1997-2016,Au,sea surface temperature,°C,11
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,7.8
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,10
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13.8
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Dataset Average,1997-2016,Au,sea surface temperature,°C,11.3
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,7.7
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.5
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Dataset Average,1997-2016,Au,sea surface temperature,°C,10.8
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Dataset Average,1997-2016,Wi,sea surface temperature,°C,8.1
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.9
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Dataset Average,1997-2016,Su,sea surface temperature,°C,13
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Dataset Average,1997-2016,Au,sea surface temperature,°C,11
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,6.4
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.4
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Dataset Average,1997-2016,Au,sea surface temperature,°C,9.6
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,7.6
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,8.9
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Dataset Average,1997-2016,Su,sea surface temperature,°C,12
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Dataset Average,1997-2016,Au,sea surface temperature,°C,10.1
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,6.2
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.4
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Su,sea surface temperature,°C,12.7
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Dataset Average,1997-2016,Au,sea surface temperature,°C,9
+MINI,09. (MORAY FIRTH) CROMARTY     ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,5.8
+MINI,09. (MORAY FIRTH) CROMARTY     ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,9.8
+MINI,09. (MORAY FIRTH) CROMARTY     ,Dataset Average,1997-2016,Su,sea surface temperature,°C,13.8
+MINI,09. (MORAY FIRTH) CROMARTY     ,Dataset Average,1997-2016,Au,sea surface temperature,°C,9.3
+MINI,10. (NORTH EAST) EAST COAST    ,Dataset Average,1997-2016,Wi,sea surface temperature,°C,6.5
+MINI,10. (NORTH EAST) EAST COAST    ,Dataset Average,1997-2016,Sp,sea surface temperature,°C,8.7
+MINI,10. (NORTH EAST) EAST COAST    ,Dataset Average,1997-2016,Su,sea surface temperature,°C,12.9
+MINI,10. (NORTH EAST) EAST COAST    ,Dataset Average,1997-2016,Au,sea surface temperature,°C,10.5
+MINI,02. (CLYDE) MILLPORT           ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,7.9
+MINI,02. (CLYDE) MILLPORT           ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,10.4
+MINI,02. (CLYDE) MILLPORT           ,Climatological Average,2000-2010,Su,sea surface temperature,°C,14.3
+MINI,02. (CLYDE) MILLPORT           ,Climatological Average,2000-2010,Au,sea surface temperature,°C,11.1
+MINI,03. (ARGYLL) TIREE             ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,8.3
+MINI,03. (ARGYLL) TIREE             ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.7
+MINI,03. (ARGYLL) TIREE             ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.5
+MINI,03. (ARGYLL) TIREE             ,Climatological Average,2000-2010,Au,sea surface temperature,°C,11.9
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,7.6
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,10.2
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.9
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Climatological Average,2000-2010,Au,sea surface temperature,°C,11
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,7.9
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,10.1
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Climatological Average,2000-2010,Su,sea surface temperature,°C,14
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Climatological Average,2000-2010,Au,sea surface temperature,°C,11.4
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,7.8
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.7
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.2
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Climatological Average,2000-2010,Au,sea surface temperature,°C,10.8
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Climatological Average,2000-2010,Wi,sea surface temperature,°C,8.2
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Climatological Average,2000-2010,Sp,sea surface temperature,°C,10.1
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.2
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Climatological Average,2000-2010,Au,sea surface temperature,°C,11.1
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,6.5
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.6
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13.1
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Climatological Average,2000-2010,Au,sea surface temperature,°C,9.6
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,7.5
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,8.9
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Climatological Average,2000-2010,Su,sea surface temperature,°C,11.9
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Climatological Average,2000-2010,Au,sea surface temperature,°C,10.1
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,6.3
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.5
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Su,sea surface temperature,°C,12.8
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Climatological Average,2000-2010,Au,sea surface temperature,°C,9
+MINI,09. (MORAY FIRTH) CROMARTY     ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,5.9
+MINI,09. (MORAY FIRTH) CROMARTY     ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,9.9
+MINI,09. (MORAY FIRTH) CROMARTY     ,Climatological Average,2000-2010,Su,sea surface temperature,°C,14
+MINI,09. (MORAY FIRTH) CROMARTY     ,Climatological Average,2000-2010,Au,sea surface temperature,°C,9.4
+MINI,10. (NORTH EAST) EAST COAST    ,Climatological Average,2000-2010,Wi,sea surface temperature,°C,6.5
+MINI,10. (NORTH EAST) EAST COAST    ,Climatological Average,2000-2010,Sp,sea surface temperature,°C,8.7
+MINI,10. (NORTH EAST) EAST COAST    ,Climatological Average,2000-2010,Su,sea surface temperature,°C,13
+MINI,10. (NORTH EAST) EAST COAST    ,Climatological Average,2000-2010,Au,sea surface temperature,°C,10.5
+MINI,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.5
+MINI,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10
+MINI,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Su,sea surface temperature,°C,14.1
+MINI,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.9
+MINI,03. (ARGYLL) TIREE             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8
+MINI,03. (ARGYLL) TIREE             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.5
+MINI,03. (ARGYLL) TIREE             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.4
+MINI,03. (ARGYLL) TIREE             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.7
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.7
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.2
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.9
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.1
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.7
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.8
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.2
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.7
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.2
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.8
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.8
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.1
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.9
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.9
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.4
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.3
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,9.4
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.4
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,8.7
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Decadal Average,2006-2015,Su,sea surface temperature,°C,11.6
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Decadal Average,2006-2015,Au,sea surface temperature,°C,9.8
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.2
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.4
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.7
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Decadal Average,2006-2015,Au,sea surface temperature,°C,8.9
+MINI,09. (MORAY FIRTH) CROMARTY     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,5.8
+MINI,09. (MORAY FIRTH) CROMARTY     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.8
+MINI,09. (MORAY FIRTH) CROMARTY     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.8
+MINI,09. (MORAY FIRTH) CROMARTY     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,9.3
+MINI,10. (NORTH EAST) EAST COAST    ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.4
+MINI,10. (NORTH EAST) EAST COAST    ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,8.6
+MINI,10. (NORTH EAST) EAST COAST    ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.8
+MINI,10. (NORTH EAST) EAST COAST    ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.5
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2016,Wi,sea surface temperature,°C,7.7
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2016,Sp,sea surface temperature,°C,10.2
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2016,Su,sea surface temperature,°C,14.2
+MINI,02. (CLYDE) MILLPORT           ,Data for Year,2016,Au,sea surface temperature,°C,11.5
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2016,Su,sea surface temperature,°C,-99
+MINI,03. (ARGYLL) TIREE             ,Data for Year,2016,Au,sea surface temperature,°C,-99
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2016,Wi,sea surface temperature,°C,7.7
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2016,Sp,sea surface temperature,°C,10.5
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2016,Su,sea surface temperature,°C,14
+MINI,04. (WEST HIGHLANDS) ARDTOE    ,Data for Year,2016,Au,sea surface temperature,°C,11.1
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2016,Wi,sea surface temperature,°C,8
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2016,Sp,sea surface temperature,°C,10.1
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2016,Su,sea surface temperature,°C,13.8
+MINI,04. (WEST HIGHLANDS) MALLAIG   ,Data for Year,2016,Au,sea surface temperature,°C,11.6
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2016,Wi,sea surface temperature,°C,8
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2016,Sp,sea surface temperature,°C,9.3
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2016,Su,sea surface temperature,°C,12.7
+MINI,04. (WEST HIGHLANDS) LOCH EWE  ,Data for Year,2016,Au,sea surface temperature,°C,11.1
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2016,Wi,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2016,Sp,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2016,Su,sea surface temperature,°C,-99
+MINI,05. (OUTER HEBRIDES) LOCH MADDY,Data for Year,2016,Au,sea surface temperature,°C,11.4
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Wi,sea surface temperature,°C,6.3
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Sp,sea surface temperature,°C,9.1
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Su,sea surface temperature,°C,13.6
+MINI,07. (ORKNEY ISLANDS) SCAPA     ,Data for Year,2016,Au,sea surface temperature,°C,10
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2016,Wi,sea surface temperature,°C,7.4
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2016,Sp,sea surface temperature,°C,8.9
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2016,Su,sea surface temperature,°C,12
+MINI,08. (SHETLAND ISLES) FAIR ISLE ,Data for Year,2016,Au,sea surface temperature,°C,10.6
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Wi,sea surface temperature,°C,6.2
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Sp,sea surface temperature,°C,9.3
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Su,sea surface temperature,°C,12.9
+MINI,08. (SHETLAND ISLES) SCALLOWAY ,Data for Year,2016,Au,sea surface temperature,°C,9.3
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2016,Wi,sea surface temperature,°C,6
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2016,Su,sea surface temperature,°C,-99
+MINI,09. (MORAY FIRTH) CROMARTY     ,Data for Year,2016,Au,sea surface temperature,°C,-99
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2016,Wi,sea surface temperature,°C,6.5
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2016,Sp,sea surface temperature,°C,9
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2016,Su,sea surface temperature,°C,12.9
+MINI,10. (NORTH EAST) EAST COAST    ,Data for Year,2016,Au,sea surface temperature,°C,10.1
+MINIP,02. (CLYDE) MILLPORT           ,Dataset Average,1900-2016,Wi,sea surface temperature,°C,7.2
+MINIP,02. (CLYDE) MILLPORT           ,Dataset Average,1900-2016,Sp,sea surface temperature,°C,9.4
+MINIP,02. (CLYDE) MILLPORT           ,Dataset Average,1900-2016,Su,sea surface temperature,°C,13.3
+MINIP,02. (CLYDE) MILLPORT           ,Dataset Average,1900-2016,Au,sea surface temperature,°C,10.4
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Dataset Average,1900-2016,Wi,sea surface temperature,°C,7
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Dataset Average,1900-2016,Sp,sea surface temperature,°C,8.8
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Dataset Average,1900-2016,Su,sea surface temperature,°C,11.7
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Dataset Average,1900-2016,Au,sea surface temperature,°C,9.7
+MINIP,10. (NORTH EAST) PETERHEAD     ,Dataset Average,1900-2016,Wi,sea surface temperature,°C,6.2
+MINIP,10. (NORTH EAST) PETERHEAD     ,Dataset Average,1900-2016,Sp,sea surface temperature,°C,8.9
+MINIP,10. (NORTH EAST) PETERHEAD     ,Dataset Average,1900-2016,Su,sea surface temperature,°C,12.8
+MINIP,10. (NORTH EAST) PETERHEAD     ,Dataset Average,1900-2016,Au,sea surface temperature,°C,9.9
+MINIP,02. (CLYDE) MILLPORT           ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.3
+MINIP,02. (CLYDE) MILLPORT           ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.9
+MINIP,02. (CLYDE) MILLPORT           ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.9
+MINIP,02. (CLYDE) MILLPORT           ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.9
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.8
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Climatological Average,1981-2010,Su,sea surface temperature,°C,11.8
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Climatological Average,1981-2010,Au,sea surface temperature,°C,9.8
+MINIP,10. (NORTH EAST) PETERHEAD     ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,6.2
+MINIP,10. (NORTH EAST) PETERHEAD     ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,8.9
+MINIP,10. (NORTH EAST) PETERHEAD     ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.8
+MINIP,10. (NORTH EAST) PETERHEAD     ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10
+MINIP,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.5
+MINIP,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.1
+MINIP,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Su,sea surface temperature,°C,14
+MINIP,02. (CLYDE) MILLPORT           ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.8
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.5
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,8.7
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Decadal Average,2006-2015,Su,sea surface temperature,°C,11.6
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Decadal Average,2006-2015,Au,sea surface temperature,°C,9.8
+MINIP,10. (NORTH EAST) PETERHEAD     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,6.6
+MINIP,10. (NORTH EAST) PETERHEAD     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9
+MINIP,10. (NORTH EAST) PETERHEAD     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.2
+MINIP,10. (NORTH EAST) PETERHEAD     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,9.9
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2016,Wi,sea surface temperature,°C,7.7
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2016,Sp,sea surface temperature,°C,10.2
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2016,Su,sea surface temperature,°C,14.2
+MINIP,02. (CLYDE) MILLPORT           ,Data for Year,2016,Au,sea surface temperature,°C,11.5
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2016,Wi,sea surface temperature,°C,7.4
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2016,Sp,sea surface temperature,°C,8.9
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2016,Su,sea surface temperature,°C,-99
+MINIP,08. (SHETLAND ISLES) FAIRISLE  ,Data for Year,2016,Au,sea surface temperature,°C,10.6
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2016,Wi,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2016,Sp,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2016,Su,sea surface temperature,°C,-99
+MINIP,10. (NORTH EAST) PETERHEAD     ,Data for Year,2016,Au,sea surface temperature,°C,-99
+HADISST,01. SOLWAY                     ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,8.2
+HADISST,01. SOLWAY                     ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,10
+HADISST,01. SOLWAY                     ,Dataset Average,1893-2016,Su,sea surface temperature,°C,14
+HADISST,01. SOLWAY                     ,Dataset Average,1893-2016,Au,sea surface temperature,°C,11.7
+HADISST,02. CLYDE                      ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,8.3
+HADISST,02. CLYDE                      ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9.9
+HADISST,02. CLYDE                      ,Dataset Average,1893-2016,Su,sea surface temperature,°C,13.7
+HADISST,02. CLYDE                      ,Dataset Average,1893-2016,Au,sea surface temperature,°C,11.5
+HADISST,03. ARGYLL                     ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,8.4
+HADISST,03. ARGYLL                     ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9.9
+HADISST,03. ARGYLL                     ,Dataset Average,1893-2016,Su,sea surface temperature,°C,13.4
+HADISST,03. ARGYLL                     ,Dataset Average,1893-2016,Au,sea surface temperature,°C,11.2
+HADISST,04. WEST HIGHLANDS             ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,8.2
+HADISST,04. WEST HIGHLANDS             ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9.6
+HADISST,04. WEST HIGHLANDS             ,Dataset Average,1893-2016,Su,sea surface temperature,°C,12.9
+HADISST,04. WEST HIGHLANDS             ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10.7
+HADISST,05. OUTER HEBRIDES             ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,8.5
+HADISST,05. OUTER HEBRIDES             ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9.8
+HADISST,05. OUTER HEBRIDES             ,Dataset Average,1893-2016,Su,sea surface temperature,°C,12.8
+HADISST,05. OUTER HEBRIDES             ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10.6
+HADISST,06. NORTH COAST                ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,7.6
+HADISST,06. NORTH COAST                ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9.2
+HADISST,06. NORTH COAST                ,Dataset Average,1893-2016,Su,sea surface temperature,°C,12.6
+HADISST,06. NORTH COAST                ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10.2
+HADISST,07. ORKNEY ISLANDS             ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,7.6
+HADISST,07. ORKNEY ISLANDS             ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9
+HADISST,07. ORKNEY ISLANDS             ,Dataset Average,1893-2016,Su,sea surface temperature,°C,12.3
+HADISST,07. ORKNEY ISLANDS             ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10
+HADISST,08. SHETLAND ISLES             ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,7.5
+HADISST,08. SHETLAND ISLES             ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,8.9
+HADISST,08. SHETLAND ISLES             ,Dataset Average,1893-2016,Su,sea surface temperature,°C,12.2
+HADISST,08. SHETLAND ISLES             ,Dataset Average,1893-2016,Au,sea surface temperature,°C,9.6
+HADISST,09. MORAY FIRTH                ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,7.1
+HADISST,09. MORAY FIRTH                ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,9
+HADISST,09. MORAY FIRTH                ,Dataset Average,1893-2016,Su,sea surface temperature,°C,12.7
+HADISST,09. MORAY FIRTH                ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10.1
+HADISST,10. NORTH EAST                 ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,6.7
+HADISST,10. NORTH EAST                 ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,8.9
+HADISST,10. NORTH EAST                 ,Dataset Average,1893-2016,Su,sea surface temperature,°C,13
+HADISST,10. NORTH EAST                 ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10
+HADISST,11. FORTH AND TAY              ,Dataset Average,1893-2016,Wi,sea surface temperature,°C,6.6
+HADISST,11. FORTH AND TAY              ,Dataset Average,1893-2016,Sp,sea surface temperature,°C,8.9
+HADISST,11. FORTH AND TAY              ,Dataset Average,1893-2016,Su,sea surface temperature,°C,13.1
+HADISST,11. FORTH AND TAY              ,Dataset Average,1893-2016,Au,sea surface temperature,°C,10
+HADISST,01. SOLWAY                     ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.4
+HADISST,01. SOLWAY                     ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,10.3
+HADISST,01. SOLWAY                     ,Climatological Average,1981-2010,Su,sea surface temperature,°C,14.4
+HADISST,01. SOLWAY                     ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.9
+HADISST,02. CLYDE                      ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.4
+HADISST,02. CLYDE                      ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,10.1
+HADISST,02. CLYDE                      ,Climatological Average,1981-2010,Su,sea surface temperature,°C,14
+HADISST,02. CLYDE                      ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.6
+HADISST,03. ARGYLL                     ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.5
+HADISST,03. ARGYLL                     ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,10.1
+HADISST,03. ARGYLL                     ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.7
+HADISST,03. ARGYLL                     ,Climatological Average,1981-2010,Au,sea surface temperature,°C,11.3
+HADISST,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.3
+HADISST,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.7
+HADISST,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.2
+HADISST,04. WEST HIGHLANDS             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.9
+HADISST,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,8.6
+HADISST,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,10
+HADISST,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.1
+HADISST,05. OUTER HEBRIDES             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.8
+HADISST,06. NORTH COAST                ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.8
+HADISST,06. NORTH COAST                ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.4
+HADISST,06. NORTH COAST                ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.8
+HADISST,06. NORTH COAST                ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.4
+HADISST,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.8
+HADISST,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.3
+HADISST,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.6
+HADISST,07. ORKNEY ISLANDS             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.2
+HADISST,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.7
+HADISST,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.1
+HADISST,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Su,sea surface temperature,°C,12.5
+HADISST,08. SHETLAND ISLES             ,Climatological Average,1981-2010,Au,sea surface temperature,°C,9.8
+HADISST,09. MORAY FIRTH                ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.4
+HADISST,09. MORAY FIRTH                ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.2
+HADISST,09. MORAY FIRTH                ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13
+HADISST,09. MORAY FIRTH                ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.4
+HADISST,10. NORTH EAST                 ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,7.1
+HADISST,10. NORTH EAST                 ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.2
+HADISST,10. NORTH EAST                 ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.3
+HADISST,10. NORTH EAST                 ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.3
+HADISST,11. FORTH AND TAY              ,Climatological Average,1981-2010,Wi,sea surface temperature,°C,6.9
+HADISST,11. FORTH AND TAY              ,Climatological Average,1981-2010,Sp,sea surface temperature,°C,9.2
+HADISST,11. FORTH AND TAY              ,Climatological Average,1981-2010,Su,sea surface temperature,°C,13.5
+HADISST,11. FORTH AND TAY              ,Climatological Average,1981-2010,Au,sea surface temperature,°C,10.3
+HADISST,01. SOLWAY                     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.5
+HADISST,01. SOLWAY                     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.5
+HADISST,01. SOLWAY                     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,14.6
+HADISST,01. SOLWAY                     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,12.2
+HADISST,02. CLYDE                      ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.5
+HADISST,02. CLYDE                      ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.3
+HADISST,02. CLYDE                      ,Decadal Average,2006-2015,Su,sea surface temperature,°C,14.1
+HADISST,02. CLYDE                      ,Decadal Average,2006-2015,Au,sea surface temperature,°C,12
+HADISST,03. ARGYLL                     ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.6
+HADISST,03. ARGYLL                     ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.3
+HADISST,03. ARGYLL                     ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.8
+HADISST,03. ARGYLL                     ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.7
+HADISST,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.6
+HADISST,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.1
+HADISST,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.3
+HADISST,04. WEST HIGHLANDS             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.2
+HADISST,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.9
+HADISST,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,10.3
+HADISST,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.3
+HADISST,05. OUTER HEBRIDES             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,11.1
+HADISST,06. NORTH COAST                ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.1
+HADISST,06. NORTH COAST                ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.7
+HADISST,06. NORTH COAST                ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.1
+HADISST,06. NORTH COAST                ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.8
+HADISST,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,8.1
+HADISST,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.6
+HADISST,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.9
+HADISST,07. ORKNEY ISLANDS             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.6
+HADISST,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.9
+HADISST,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.5
+HADISST,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Su,sea surface temperature,°C,12.9
+HADISST,08. SHETLAND ISLES             ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.2
+HADISST,09. MORAY FIRTH                ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.7
+HADISST,09. MORAY FIRTH                ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.6
+HADISST,09. MORAY FIRTH                ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.3
+HADISST,09. MORAY FIRTH                ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.8
+HADISST,10. NORTH EAST                 ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.4
+HADISST,10. NORTH EAST                 ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.5
+HADISST,10. NORTH EAST                 ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.7
+HADISST,10. NORTH EAST                 ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.8
+HADISST,11. FORTH AND TAY              ,Decadal Average,2006-2015,Wi,sea surface temperature,°C,7.2
+HADISST,11. FORTH AND TAY              ,Decadal Average,2006-2015,Sp,sea surface temperature,°C,9.6
+HADISST,11. FORTH AND TAY              ,Decadal Average,2006-2015,Su,sea surface temperature,°C,13.8
+HADISST,11. FORTH AND TAY              ,Decadal Average,2006-2015,Au,sea surface temperature,°C,10.7
+HADISST,01. SOLWAY                     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,01. SOLWAY                     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,01. SOLWAY                     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,01. SOLWAY                     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,02. CLYDE                      ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,02. CLYDE                      ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,02. CLYDE                      ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,02. CLYDE                      ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,03. ARGYLL                     ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,03. ARGYLL                     ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,03. ARGYLL                     ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,03. ARGYLL                     ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,06. NORTH COAST                ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,06. NORTH COAST                ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,06. NORTH COAST                ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,06. NORTH COAST                ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,08. SHETLAND ISLES             ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,08. SHETLAND ISLES             ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,08. SHETLAND ISLES             ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,08. SHETLAND ISLES             ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,09. MORAY FIRTH                ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,09. MORAY FIRTH                ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,09. MORAY FIRTH                ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,09. MORAY FIRTH                ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,10. NORTH EAST                 ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,10. NORTH EAST                 ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,10. NORTH EAST                 ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,10. NORTH EAST                 ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,11. FORTH AND TAY              ,Data for Year,2015,Wi,sea surface temperature,°C,-99
+HADISST,11. FORTH AND TAY              ,Data for Year,2015,Sp,sea surface temperature,°C,-99
+HADISST,11. FORTH AND TAY              ,Data for Year,2015,Su,sea surface temperature,°C,-99
+HADISST,11. FORTH AND TAY              ,Data for Year,2015,Au,sea surface temperature,°C,-99
+HADISST,01. SOLWAY                     ,Data for Year,2016,Wi,sea surface temperature,°C,8.7
+HADISST,01. SOLWAY                     ,Data for Year,2016,Sp,sea surface temperature,°C,10.3
+HADISST,01. SOLWAY                     ,Data for Year,2016,Su,sea surface temperature,°C,14.6
+HADISST,01. SOLWAY                     ,Data for Year,2016,Au,sea surface temperature,°C,12.2
+HADISST,02. CLYDE                      ,Data for Year,2016,Wi,sea surface temperature,°C,8.5
+HADISST,02. CLYDE                      ,Data for Year,2016,Sp,sea surface temperature,°C,10.1
+HADISST,02. CLYDE                      ,Data for Year,2016,Su,sea surface temperature,°C,14.2
+HADISST,02. CLYDE                      ,Data for Year,2016,Au,sea surface temperature,°C,11.9
+HADISST,03. ARGYLL                     ,Data for Year,2016,Wi,sea surface temperature,°C,8.5
+HADISST,03. ARGYLL                     ,Data for Year,2016,Sp,sea surface temperature,°C,10.1
+HADISST,03. ARGYLL                     ,Data for Year,2016,Su,sea surface temperature,°C,14
+HADISST,03. ARGYLL                     ,Data for Year,2016,Au,sea surface temperature,°C,11.6
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2016,Wi,sea surface temperature,°C,8.4
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2016,Sp,sea surface temperature,°C,9.8
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2016,Su,sea surface temperature,°C,13.6
+HADISST,04. WEST HIGHLANDS             ,Data for Year,2016,Au,sea surface temperature,°C,11.1
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2016,Wi,sea surface temperature,°C,8.7
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2016,Sp,sea surface temperature,°C,10
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2016,Su,sea surface temperature,°C,13.6
+HADISST,05. OUTER HEBRIDES             ,Data for Year,2016,Au,sea surface temperature,°C,11
+HADISST,06. NORTH COAST                ,Data for Year,2016,Wi,sea surface temperature,°C,8.2
+HADISST,06. NORTH COAST                ,Data for Year,2016,Sp,sea surface temperature,°C,9.6
+HADISST,06. NORTH COAST                ,Data for Year,2016,Su,sea surface temperature,°C,13.3
+HADISST,06. NORTH COAST                ,Data for Year,2016,Au,sea surface temperature,°C,10.7
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2016,Wi,sea surface temperature,°C,8.2
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2016,Sp,sea surface temperature,°C,9.6
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2016,Su,sea surface temperature,°C,13
+HADISST,07. ORKNEY ISLANDS             ,Data for Year,2016,Au,sea surface temperature,°C,10.6
+HADISST,08. SHETLAND ISLES             ,Data for Year,2016,Wi,sea surface temperature,°C,7.9
+HADISST,08. SHETLAND ISLES             ,Data for Year,2016,Sp,sea surface temperature,°C,9.5
+HADISST,08. SHETLAND ISLES             ,Data for Year,2016,Su,sea surface temperature,°C,13
+HADISST,08. SHETLAND ISLES             ,Data for Year,2016,Au,sea surface temperature,°C,10.4
+HADISST,09. MORAY FIRTH                ,Data for Year,2016,Wi,sea surface temperature,°C,7.8
+HADISST,09. MORAY FIRTH                ,Data for Year,2016,Sp,sea surface temperature,°C,9.6
+HADISST,09. MORAY FIRTH                ,Data for Year,2016,Su,sea surface temperature,°C,13.5
+HADISST,09. MORAY FIRTH                ,Data for Year,2016,Au,sea surface temperature,°C,10.7
+HADISST,10. NORTH EAST                 ,Data for Year,2016,Wi,sea surface temperature,°C,7.5
+HADISST,10. NORTH EAST                 ,Data for Year,2016,Sp,sea surface temperature,°C,9.5
+HADISST,10. NORTH EAST                 ,Data for Year,2016,Su,sea surface temperature,°C,13.9
+HADISST,10. NORTH EAST                 ,Data for Year,2016,Au,sea surface temperature,°C,10.6
+HADISST,11. FORTH AND TAY              ,Data for Year,2016,Wi,sea surface temperature,°C,7.3
+HADISST,11. FORTH AND TAY              ,Data for Year,2016,Sp,sea surface temperature,°C,9.5
+HADISST,11. FORTH AND TAY              ,Data for Year,2016,Su,sea surface temperature,°C,14
+HADISST,11. FORTH AND TAY              ,Data for Year,2016,Au,sea surface temperature,°C,10.6

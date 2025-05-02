@@ -41,12 +41,12 @@ export  class  MapBaseComponent implements AfterViewInit {
 
 
   ngAfterViewInit() {
+  
     this.initMap();
     this.initGeolocation();
     this.ropesSubscription = this.logdataService.ropes$.subscribe((ropes) => {
       this.drawRopesOnMap(ropes);
     });
-    
   }
 
   private initMap() {
@@ -615,6 +615,18 @@ calculateTidalCycles(dropDate: Date): number {
 
   const numberOfCycles = timeDifferenceMs / tidalCycleDurationMs;
   return Math.round(numberOfCycles);
+}
+
+ngOnDestroy(): void{
+  if (this.map) {
+    google.maps.event.clearInstanceListeners(this.map); // Clear all event listeners on the map
+    this.map = undefined!;
+  }
+  if (this.marker) {
+    this.marker.setMap(null); // Remove the marker from the map
+    this.marker = undefined!;
+  }
+  this.ropesSubscription.unsubscribe();
 }
 
 
