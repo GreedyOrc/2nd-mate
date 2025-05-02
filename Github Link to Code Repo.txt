@@ -1,0 +1,11 @@
+Hello, 
+
+Location of the code is in a public repo located here: https://github.com/GreedyOrc/2nd-mate
+
+Web Application can be accessed here: https://greedyorc.github.io/2nd-mate/
+
+Thanks 
+
+Ray Banks 
+
+055756

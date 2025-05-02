@@ -200,7 +200,7 @@ export  class  MapBaseComponent implements AfterViewInit {
               <p><button id="haulRopeButton-${rope.id}">Haul Rope</button> </p>
               `);
               
-              // used to help debug what information was being passed through to LogData Service. 
+              
               // console.log(rope);
           
 
@@ -211,7 +211,7 @@ export  class  MapBaseComponent implements AfterViewInit {
                     console.log(`Hauling Rope: ${rope.id}`);
                     this.haulRope(rope);
                     if (infoWindow) {
-                      infoWindow.close();  // Close the InfoWindow when Haul Rope is pressed
+                      infoWindow.close();  
                     }
                   });
                 } else {
@@ -220,7 +220,7 @@ export  class  MapBaseComponent implements AfterViewInit {
               });
 
 
-        // Add click event listener to the marker instead of the polyline
+        
         iconMarker.addListener("click", () => {
           if (infoWindow) {
             infoWindow.open(this.map, iconMarker);
@@ -261,7 +261,7 @@ export  class  MapBaseComponent implements AfterViewInit {
     const latCell = document.getElementById('latCell');
     const longCell = document.getElementById('longCell');
 
-    // Update marker rotation if heading available
+    // Update marker rotation if heading available #todo
     
       this.marker.setIcon({
         path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
@@ -301,7 +301,7 @@ export  class  MapBaseComponent implements AfterViewInit {
     const lon1 = position.coords.longitude * (Math.PI / 180);
     const headingRad = position.coords.heading * (Math.PI / 180);
   
-    // Compute new lat/lon
+    //calc new lat/lon
     const lat2 = Math.asin(
       Math.sin(lat1) * Math.cos(distance / earthRadius) +
         Math.cos(lat1) * Math.sin(distance / earthRadius) * Math.cos(headingRad)
@@ -347,7 +347,7 @@ export  class  MapBaseComponent implements AfterViewInit {
     const centerControlButton = document.createElement('div');
     this.customStyleControlButton(centerControlButton);
     
-    // Click event to re-center the map
+    
     centerControlButton.addEventListener('click', () => {
       if (this.currentPosition?.coords) {
         map.setCenter({
@@ -435,7 +435,7 @@ export  class  MapBaseComponent implements AfterViewInit {
 
   createRopeControls() {
     const ropeControlDiv = document.createElement('div');
-    ropeControlDiv.style.position = 'relative'; // Ensure the buttons stay in the same space
+    ropeControlDiv.style.position = 'relative'; 
     ropeControlDiv.style.width = '120px';
     ropeControlDiv.style.height = '40px';
     ropeControlDiv.style.marginBottom = '30px';
@@ -460,7 +460,7 @@ export  class  MapBaseComponent implements AfterViewInit {
     endRope.style.position = 'absolute';
     endRope.style.width = '100%';
     endRope.style.height = '100%';
-    endRope.style.display = 'none'; // Initially hidden
+    endRope.style.display = 'none';
 
     startRope.addEventListener('click', () => this.startRope(startRope, endRope));
     endRope.addEventListener('click', () => this.endRope(startRope, endRope));
@@ -486,7 +486,7 @@ export  class  MapBaseComponent implements AfterViewInit {
 
     // Function to populate dropdown options
     const updateDropdown = () => {
-      select.innerHTML = ''; // Clear existing options
+      select.innerHTML = ''; 
       this.catchTypes.forEach((type) => {
         // console.log('inside updatedropdown ')
         const option = document.createElement('option');
@@ -526,8 +526,8 @@ export  class  MapBaseComponent implements AfterViewInit {
     this.startPosition = this.currentPosition;
     console.log('Start Position Stored!', this.currentPosition);
 
-    startRope.style.display = 'none'; // Hide start button
-    endRope.style.display = 'block'; // Show end button
+    startRope.style.display = 'none'; 
+    endRope.style.display = 'block'; 
   }
 
   async endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
@@ -543,13 +543,13 @@ export  class  MapBaseComponent implements AfterViewInit {
     const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour, depth);
     this.logdataService.storeLocation(limitedRope);
 
-    endRope.style.display = 'none'; // Hide end button
-    startRope.style.display = 'block'; // Show start button again
+    endRope.style.display = 'none'; 
+    startRope.style.display = 'block'; 
   }
 
   getColourForCatchType(catchTypeName: string): string {
     const catchType = this.catchTypes.find(ct => ct.name === catchTypeName);
-    return catchType ? catchType.colour : '#000000'; // Return undefined if not found
+    return catchType ? catchType.colour : '#000000'; 
   }
 
 
@@ -567,7 +567,7 @@ haulRope(rope: Rope) {
 
   // Create a dropdown select element
   const select = document.createElement('select');
-  const options = ['Excellent', 'Good', 'Average', 'Poor']; // Example rating options
+  const options = ['Excellent', 'Good', 'Average', 'Poor'];
   options.forEach(option => {
       const opt = document.createElement('option');
       opt.value = option;
@@ -579,15 +579,11 @@ haulRope(rope: Rope) {
   const submitButton = document.createElement('button');
   submitButton.textContent = 'Submit';
   submitButton.style.marginTop = '10px';
-
-  // Append the dropdown and button to the container
   dropdownContainer.appendChild(select);
   dropdownContainer.appendChild(submitButton);
 
-  // Append the container to the body
+  
   document.body.appendChild(dropdownContainer);
-
-  // Position the dropdown near the button (optional, adjust as needed)
   dropdownContainer.style.top = '50%';
   dropdownContainer.style.left = '50%';
   dropdownContainer.style.transform = 'translate(-50%, -50%)';
@@ -619,11 +615,11 @@ calculateTidalCycles(dropDate: Date): number {
 
 ngOnDestroy(): void{
   if (this.map) {
-    google.maps.event.clearInstanceListeners(this.map); // Clear all event listeners on the map
+    google.maps.event.clearInstanceListeners(this.map); 
     this.map = undefined!;
   }
   if (this.marker) {
-    this.marker.setMap(null); // Remove the marker from the map
+    this.marker.setMap(null); 
     this.marker = undefined!;
   }
   this.ropesSubscription.unsubscribe();
