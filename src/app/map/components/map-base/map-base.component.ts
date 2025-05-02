@@ -2,6 +2,7 @@ import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LogdataService } from '../../services/logdata.service';
 import { Rope } from '../../models/ropes.model';
+import { GeolocationService } from '../../services/geolocation.service';
 
 
 
@@ -10,7 +11,7 @@ import { Rope } from '../../models/ropes.model';
   templateUrl: './map-base.component.html',
   styleUrls: ['./map-base.component.css']
 })
-export class MapBaseComponent implements AfterViewInit {
+export  class  MapBaseComponent implements AfterViewInit {
   private ropesSubscription!: Subscription;
   
   followPosition: boolean = false;
@@ -23,12 +24,13 @@ export class MapBaseComponent implements AfterViewInit {
   catchTypes: { name: string; colour: string }[] = [];
   selectedCatchType: string = '';
   ropesPolylines: google.maps.Polyline[] = []; // Store polyline references
-  
+  ropeMarkers: google.maps.Marker[] = [];
 
-  constructor(private logdataService: LogdataService) { }
+  constructor(private logdataService: LogdataService, private geolocationService: GeolocationService) { }
 
 
   @ViewChild('mapContainer', { static: false }) mapContainer!: ElementRef;
+  
   //Attempt at drop down menu
   ngOnInit() {    
     this.logdataService.catchtypes$.subscribe((types) => {
@@ -39,12 +41,12 @@ export class MapBaseComponent implements AfterViewInit {
 
 
   ngAfterViewInit() {
+  
     this.initMap();
     this.initGeolocation();
     this.ropesSubscription = this.logdataService.ropes$.subscribe((ropes) => {
       this.drawRopesOnMap(ropes);
     });
-    
   }
 
   private initMap() {
@@ -115,9 +117,18 @@ export class MapBaseComponent implements AfterViewInit {
 
   private drawRopesOnMap(ropes: any[]) {
     // Clear existing polylines
-    this.ropesPolylines.forEach(polyline => polyline.setMap(null));
+    this.ropesPolylines.forEach(polyline => 
+      polyline.setMap(null)
+    );
     this.ropesPolylines = [];
-    let infoWindow: google.maps.InfoWindow | null = null;
+
+    // Clear existing markers
+    this.ropeMarkers.forEach(marker =>
+      marker.setMap(null)
+    );
+
+    this.ropeMarkers = [];
+    
     
     ropes.forEach(rope => {
       if (rope.startLocation && rope.endLocation) {
@@ -129,7 +140,7 @@ export class MapBaseComponent implements AfterViewInit {
         const polyline = new google.maps.Polyline({
           path: ropePath,
           geodesic: true,
-          strokeColor: '#000000', // Black polyline
+          strokeColor: '#000000',
           strokeOpacity: 0.9,
           strokeWeight: 5,
           map: this.map,
@@ -149,18 +160,36 @@ export class MapBaseComponent implements AfterViewInit {
           },
         });
 
+        this.ropeMarkers.push(iconMarker);
+        let infoWindow: google.maps.InfoWindow | null = null;
+
         const infoWindowDiv = document.createElement('div');
         this.customStyleInfoWindow(infoWindowDiv);
         infoWindow = new google.maps.InfoWindow
         //set style for pop out window
         infoWindow.setOptions(infoWindowDiv);
 
+        const dropDate = new Date(rope.dropTime);
+        const today = new Date();
+        dropDate.setHours(0, 0, 0, 0);
+        today.setHours(0, 0, 0, 0);
+        const differenceInMilliseconds = today.getTime() - dropDate.getTime();
+        const millisecondsPerDay = 1000 * 60 * 60 * 24;
+        const differenceInDays = Math.floor(differenceInMilliseconds / millisecondsPerDay);
+        // console.log('Drop Date Outside Function ', rope.dropTime)
+
+        const noOfTidelCycles = this.calculateTidalCycles(new Date(rope.dropTime));
+
         infoWindow.setContent(
                `
-              <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details</h3>
+              <h3 style="margin: 0; font-size: 16px; color: ${rope.colour};">Rope Details - ${differenceInDays} days old  </h3>
               <p><strong>Created:</strong> ${new Date(rope.dropTime).toLocaleString()}</p>
+              <p><strong>No of Tides:</strong> ${noOfTidelCycles}</p>
               <p><strong>Catch Type:</strong> 
                 <span >${rope.catchtype}</span>
+              </p>
+              <p><strong>Rope depth:</strong> 
+                <span >${rope.depth}</span>
               </p>
               <p><strong>Start:</strong> 
                 <span >(${rope.startLocation.coords.latitude.toFixed(5)}, ${rope.startLocation.coords.longitude.toFixed(5)})</span>
@@ -339,10 +368,6 @@ export class MapBaseComponent implements AfterViewInit {
     return controlButtonDiv;
   }
 
-  createFollowControl(map: google.maps.Map) {
-    //create the follow button in here
-    //Need to also create a function to listen when the map is manually moved to turn off auto follow and disable this button 
-  }
 
   customStyleControlButton(centerControlButton: HTMLElement){
     centerControlButton.style.width = '40px';
@@ -475,10 +500,8 @@ export class MapBaseComponent implements AfterViewInit {
       
     };
 
-    // Initial population (if data is already available)
     updateDropdown();
 
-    // Listen for data updates (wait for Firebase data)
     this.logdataService.getCatchTypes().subscribe((types) => {
       this.catchTypes = types;
       updateDropdown(); 
@@ -507,13 +530,17 @@ export class MapBaseComponent implements AfterViewInit {
     endRope.style.display = 'block'; // Show end button
   }
 
-  endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
+  async endRope(startRope: HTMLButtonElement, endRope: HTMLButtonElement) {
     console.log('End Rope Button Pressed!');
     console.log(this.selectedCatchType);
     const colour = this.getColourForCatchType(this.selectedCatchType);
     const time = Date.now();
     // const tempID = length(this.ropes$) + '';
-    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour);
+
+    const depth = await this.geolocationService.getDept(this.startPosition!, this.currentPosition!);
+    console.log('depth1', depth);
+
+    const limitedRope = new Rope(time,this.startPosition!, this.currentPosition!, this.selectedCatchType, colour, depth);
     this.logdataService.storeLocation(limitedRope);
 
     endRope.style.display = 'none'; // Hide end button
@@ -525,16 +552,7 @@ export class MapBaseComponent implements AfterViewInit {
     return catchType ? catchType.colour : '#000000'; // Return undefined if not found
   }
 
-//   haulRope(rope: Rope) {
-//     console.log("Haul Rope Button Pressed");
-//     const rating = prompt("Please provide rating on the hauled rope:");
-    
-//     if (rating !== null) {
-//       this.logdataService.updateRope(rope, rating);
-//       console.log(`Rope ${rope} updated successfully.`);
 
-//     }
-// }
 
 haulRope(rope: Rope) {
   console.log("Haul Rope Button Pressed");
@@ -585,11 +603,30 @@ haulRope(rope: Rope) {
   });
 }
 
-ngOnDestroy(): void {
-  // Unsubscribe to avoid memory leaks
-  if (this.ropesSubscription) {
-    this.ropesSubscription.unsubscribe();
+
+// calculates the number of tidal cycles since the input date, must calculate in miliseconds ~ tidal cycle is around 12 hours 25 mins 
+calculateTidalCycles(dropDate: Date): number {
+  const tidalCycleDurationMs = (12 * 60 + 25) * 60 * 1000; 
+  const now = new Date(); 
+  const timeDifferenceMs = now.getTime() - dropDate.getTime(); 
+  if (timeDifferenceMs < 0) {
+      return 0;
   }
+
+  const numberOfCycles = timeDifferenceMs / tidalCycleDurationMs;
+  return Math.round(numberOfCycles);
+}
+
+ngOnDestroy(): void{
+  if (this.map) {
+    google.maps.event.clearInstanceListeners(this.map); // Clear all event listeners on the map
+    this.map = undefined!;
+  }
+  if (this.marker) {
+    this.marker.setMap(null); // Remove the marker from the map
+    this.marker = undefined!;
+  }
+  this.ropesSubscription.unsubscribe();
 }
 
 

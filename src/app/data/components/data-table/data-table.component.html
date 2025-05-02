@@ -1,0 +1,46 @@
+<div class="mat-elevation-z8">
+    <mat-form-field>
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Name">
+    </mat-form-field>
+  
+    <table mat-table [dataSource]="dataSource" matSort class="mat-table">
+  
+      <!-- Drop Down Column -->
+      <ng-container matColumnDef="dropTime">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Drop Time</th>
+        <td mat-cell *matCellDef="let element">{{ element.dropTime | date }}</td>
+      </ng-container>
+  
+      <!-- Name Column -->
+      <ng-container matColumnDef="catchtype">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Catch Type</th>
+        <td mat-cell *matCellDef="let element">{{ element.catchtype }}</td>
+      </ng-container>
+  
+      <!-- Date Column -->
+      <ng-container matColumnDef="depth">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Depth</th>
+        <td mat-cell *matCellDef="let element">{{ element.depth }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="startlocation">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Start Location</th>
+        <td mat-cell *matCellDef="let element">{{ element.startLocation.coords.latitude }}, {{element.startLocation.coords.longitude }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="endlocation">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>End Location</th>
+        <td mat-cell *matCellDef="let element">{{ element.endLocation.coords.latitude }}, {{element.endLocation.coords.longitude }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="rating">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Rating</th>
+        <td mat-cell *matCellDef="let element">{{ element.rating }}</td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSize]="50" [pageSizeOptions]="[50, 100, 200]" showFirstLastButtons></mat-paginator>
+  </div>
